@@ -4,7 +4,7 @@ import Loadable from "react-loadable"
 import './Testimony.scss';  
 var TestimonyData = require('./TestimonyData.json');
 
-const loader=()=>(<div> Espera un momento ... </div>)
+const loader=()=>(<div> Cargando testimonios ... </div>)
 const MyLoadableOwlCarousel = Loadable({
   loader: () => import("../../components/OwlCarousel/OwlCarousel"),
   loading: loader,
