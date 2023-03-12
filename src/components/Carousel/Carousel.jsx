@@ -26,7 +26,7 @@ const Carousel= () => {
       children={CarouselData.map(carousel =><div className={`${carousel.id}`} key={carousel.id}>
           <div className="overlay"></div>
           <div className="container">
-            <div className="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
+            <div data-scrollax-parent="true">
             <div className="carousel_content">
               <div className='carousel_text'>
                 <h1 className="mb-4">{carousel.title}</h1>
