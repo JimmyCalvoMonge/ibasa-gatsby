@@ -6,7 +6,7 @@ import '../pages_styles/About/About.scss'
 
 // Import base Layout
 import Layout from "../components/layout"
-// import Testimony from "../components/Testimony/Testimony";
+import Testimony from "../components/Testimony/Testimony";
 import Gallery from "../components/Gallery/Gallery";
 
 const loader=()=>(<div> Loading animating numbers ... </div>)
@@ -183,7 +183,7 @@ const AboutPage = () => {
 
       </section>
 
-      {/* <Testimony></Testimony> */}
+      <Testimony></Testimony>
       <Gallery></Gallery>
 
     </Layout>
