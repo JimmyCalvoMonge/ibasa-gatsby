@@ -29,10 +29,10 @@ const Teachers= () => {
                   <div className="faded">
                     <p>{teacher.description}</p>
                     <ul className="ftco-social text-center">
-                    <li className="ftco-animate"><a href="#"><span className="icon-twitter"></span></a></li>
-                    <li className="ftco-animate"><a href="#"><span className="icon-facebook"></span></a></li>
-                    <li className="ftco-animate"><a href="#"><span className="icon-google-plus"></span></a></li>
-                    <li className="ftco-animate"><a href="#"><span className="icon-instagram"></span></a></li>
+                    <li className="ftco-animate"><a href="/"><span className="icon-twitter"></span><p style={{'display':'none'}}> Teacher1</p></a></li>
+                    <li className="ftco-animate"><a href="/"><span className="icon-facebook"></span><p style={{'display':'none'}}> Teacher1</p></a></li>
+                    <li className="ftco-animate"><a href="/"><span className="icon-google-plus"></span><p style={{'display':'none'}}> Teacher1</p></a></li>
+                    <li className="ftco-animate"><a href="/"><span className="icon-instagram"></span><p style={{'display':'none'}}> Teacher1</p></a></li>
                     </ul>
                 </div>
                 </div>

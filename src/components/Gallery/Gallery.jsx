@@ -1,5 +1,5 @@
 import * as React from "react"
-import '../Gallery/Gallery.scss';
+import './Gallery.scss';
 
 const Gallery= () => {
   return (

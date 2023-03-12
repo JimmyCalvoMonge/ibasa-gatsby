@@ -26,12 +26,12 @@ const Blogs= () => {
                   </div>
                 </a>
                 <div className="text bg-white p-4">
-                  <h3 className="heading"><a href="#">{blog.title}</a></h3>
+                  <h3 className="heading"><a href="/">{blog.title}</a></h3>
                   <p>{blog.description}</p>
                   <div className="d-flex align-items-center mt-4">
-                    <p className="mb-0"><a href="#" className="btn btn-primary"> Leer más <span className="ion-ios-arrow-round-forward"></span></a></p>
+                    <p className="mb-0"><a href="/" className="btn btn-primary"> Leer más <span className="ion-ios-arrow-round-forward"></span></a></p>
                     <p className="ml-auto mb-0">
-                      <a href="#" className="mr-2">{blog.author}</a>
+                      <a href="/" className="mr-2">{blog.author}</a>
                       {/* <a href="#" className="meta-chat"><span className="icon-chat"></span> 3</a> */}
                     </p>
                   </div>
