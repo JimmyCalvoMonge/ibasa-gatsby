@@ -1,4 +1,4 @@
-<# IBASA Web Page
+# IBASA Web Page
 
 :school:
 
