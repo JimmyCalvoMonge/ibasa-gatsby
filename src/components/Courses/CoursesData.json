@@ -1,0 +1,34 @@
+[
+    {
+    "id": "course_1",
+    "name":"Examen de Admisión UCR-UNA",
+    "prof":"Jorge Gómez",
+    "seats":"50",
+    "type":"virtual",
+    "description":"Programas dirigidos para personas que desean cursar estudios en la Universidad de Costa Rica y Universidad Nacional. Con las clases de nuestro Instituto IBASA podrá aprobar los exámenes de admisión de las pruebas (PAA)."
+    },
+    {
+    "id": "course_2",
+    "name":"Examen de Admisión TEC",
+    "prof":"Jorge Gómez",
+    "seats":"50",
+    "type":"virtual",
+    "description":"En Instituto IBASA impartimos clases de apoyo para preparar a estudiantes para la prueba de admisión deL Instituto Tecnológico (TEC). Las clases abarcan los temas de razonamiento lógico matemático y verbal."
+    },
+    {
+    "id": "course_3",
+    "name":"Bachillerato por Madurez Suficiente",
+    "prof":"Jorge Gómez",
+    "seats":"50",
+    "type":"virtual",
+    "description":"Programa dirigido a personas mayores de edad que tienen la educación general básica aprobada y que por diversos motivos no pudieron concluir sus estudios en el sistema tradicional."
+    },
+    {
+    "id": "course_4",
+    "name":"Curso de Inglés",
+    "prof":"Jorge Gómez",
+    "seats":"50",
+    "type":"virtual",
+    "description":"Startup es el nuevo curso de inglés general para adultos y jóvenes que quieren abrirse camino en el mundo y necesitan inglés para hacerlo. Este innovador curso multidisciplinar de ocho niveles es un programa de idiomas completo."
+    }
+]

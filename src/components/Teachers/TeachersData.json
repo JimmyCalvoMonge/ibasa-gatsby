@@ -1,0 +1,26 @@
+[
+    {
+    "id": "teacher_1",
+    "name":"Jorge Gómez",
+    "position":"Matemático",
+    "description":"Esta es una pequeña descripción de este profesor"
+    },
+    {
+    "id": "teacher_2",
+    "name":"Jorge Gómez",
+    "position":"Matemático",
+    "description":"Esta es una pequeña descripción de este profesor"
+    },
+    {
+    "id": "teacher_3",
+    "name":"Jorge Gómez",
+    "position":"Matemático",
+    "description":"Esta es una pequeña descripción de este profesor"
+    },
+    {
+    "id": "teacher_4",
+    "name":"Jorge Gómez",
+    "position":"Matemático",
+    "description":"Esta es una pequeña descripción de este profesor"
+    }
+]

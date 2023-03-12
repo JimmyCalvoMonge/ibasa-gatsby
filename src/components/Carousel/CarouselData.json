@@ -1,0 +1,26 @@
+[
+    {
+    "id": "carousel_1",
+    "title":"¡Éxito garantizado con IBASA!",
+    "description":"Somos el instituto número uno a nivel nacional para preparación para las pruebas de Admisión en las Universidades Públicas.",
+    "href": "/nosotros"    
+    },
+    {
+    "id": "carousel_2",
+    "title":"Exámenes de Admisión",
+    "description":"Esta es una pequeña descripción de lo que trata esta oferta",
+    "href": "/nosotros"
+    },
+    {
+    "id": "carousel_3",
+    "title":"Bachillerato",
+    "description":"Esta es una pequeña descripción de lo que trata esta oferta",
+    "href": "/nosotros"
+    },
+    {
+    "id": "carousel_4",
+    "title":"Cursos de Inglés",
+    "description":"Esta es una pequeña descripción de lo que trata esta oferta",
+    "href": "/nosotros"
+    }
+]

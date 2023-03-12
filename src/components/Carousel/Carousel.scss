@@ -1,0 +1,68 @@
+.carousel_1 {
+    background:linear-gradient( rgba(170, 11, 11, 0.5) 100%, rgba(215, 16, 16, 0.5)100%),url(../../assets/images/backgrounds/bg_2.jpg);
+    height:20%;
+}
+.carousel_2 {
+    background:linear-gradient( rgba(221, 17, 17, 0.4) 100%, rgba(215, 16, 16, 0.5)100%),url(../../assets/images/backgrounds/bg_1.jpg);
+}
+.carousel_3 {
+    background:linear-gradient( rgba(221, 17, 17, 0.4) 100%, rgba(215, 16, 16, 0.5)100%),url(../../assets/images/backgrounds/bg_3.jpg);
+}
+.carousel_4 {
+    background:linear-gradient( rgba(221, 17, 17, 0.4) 100%, rgba(215, 16, 16, 0.5)100%),url(../../assets/images/backgrounds/bg_4.jpg);
+}
+
+.carousel_content{
+    height:70vh;
+    position: relative;
+}
+
+@media only screen and (max-height: 750px) {
+    .carousel_content{
+        height: 100vh;
+    }
+}
+
+
+.carousel_text{
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.carousel_text h1{
+    color:white;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.carousel_text p{
+    color:white;
+    font-size:24px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.owl-dots {
+    text-align: center;
+}
+.owl-dots button.owl-dot.active span, 
+.owl-dots button.owl-dot:hover span {
+  background-color: #bb2023;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  top: -1px;
+  left: -2px;
+}
+.owl-dots button.owl-dot{
+  border: 1px solid gray;
+  background: white;
+   border-radius: 50%;
+   height: 16px;
+   width: 16px;
+   position: relative;
+}

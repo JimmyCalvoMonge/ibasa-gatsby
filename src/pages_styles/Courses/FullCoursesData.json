@@ -1,0 +1,66 @@
+[
+    {
+    "id": "course_1",
+    "name":"Nombre del curso",
+    "prof":"Jorge Gómez",
+    "seats":"50",
+    "type":"virtual",
+    "description":"Esta es una pequeña descripción de lo que trata este curso"
+    },
+    {
+    "id": "course_2",
+    "name":"Nombre del curso",
+    "prof":"Jorge Gómez",
+    "seats":"50",
+    "type":"virtual",
+    "description":"Esta es una pequeña descripción de lo que trata este curso"
+    },
+    {
+    "id": "course_3",
+    "name":"Nombre del curso",
+    "prof":"Jorge Gómez",
+    "seats":"50",
+    "type":"virtual",
+    "description":"Esta es una pequeña descripción de lo que trata este curso"
+    },
+    {
+    "id": "course_4",
+    "name":"Nombre del curso",
+    "prof":"Jorge Gómez",
+    "seats":"50",
+    "type":"virtual",
+    "description":"Esta es una pequeña descripción de lo que trata este curso"
+    },
+    {
+    "id": "course_5",
+    "name":"Nombre del curso",
+    "prof":"Jorge Gómez",
+    "seats":"50",
+    "type":"virtual",
+    "description":"Esta es una pequeña descripción de lo que trata este curso"
+    },
+    {
+    "id": "course_6",
+    "name":"Nombre del curso",
+    "prof":"Jorge Gómez",
+    "seats":"50",
+    "type":"virtual",
+    "description":"Esta es una pequeña descripción de lo que trata este curso"
+    },
+    {
+    "id": "course_7",
+    "name":"Nombre del curso",
+    "prof":"Jorge Gómez",
+    "seats":"50",
+    "type":"virtual",
+    "description":"Esta es una pequeña descripción de lo que trata este curso"
+    },
+    {
+    "id": "course_8",
+    "name":"Nombre del curso",
+    "prof":"Jorge Gómez",
+    "seats":"50",
+    "type":"virtual",
+    "description":"Esta es una pequeña descripción de lo que trata este curso"
+    }
+]

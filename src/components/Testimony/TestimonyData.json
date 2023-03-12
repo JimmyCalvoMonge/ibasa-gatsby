@@ -1,0 +1,32 @@
+[
+    {
+    "id": "student_1",
+    "name":"Orlando Orozco",
+    "info":"Estudiante Curso Examen de Admisión",
+    "testimony":"Excelente Instituto, gracias a ellos y dedicación obtuve una nota mayor a 700 en la PAA, de verdad super recomendado, los profesores muy dedicados a su trabajo."
+    },
+    {
+    "id": "student_2",
+    "name":"Vero Salas",
+    "info":"Estudiante Curso Examen de Admisión",
+    "testimony":"Excelentes profesores. Se preocupan muchísimo por que el estudiante aprenda y logre una buena nota de admisión. La mejor inversión que pueden hacer, a un precio super accesible. 100% recomendados!!!"
+    },
+    {
+    "id": "student_3",
+    "name":"Karina Zamora",
+    "info":"Estudiante Bachillerato",
+    "testimony":"Excelente atención, me encantó la profe de bachi, recomendados por mil..."
+    },
+    {
+    "id": "student_4",
+    "name":"Kevin Sojo",
+    "info":"Estudiante Curso Examen de Admisión",
+    "testimony":"Realmente un curso super útil. lo recomiendo al 100% una muy buena calidad de atención hacia los estudiantes por parte de los profesores y de todos los trabajadores en general. Los profesores explican super bien, es un éxito asegurado🥰"
+    },
+    {
+    "id": "student_5",
+    "name":"Pamela Montaraya",
+    "info":"Estudiante Curso Examen de Admisión",
+    "testimony":"¡La verdad que es un excelente instituto con excelentes profesores, estoy muy agradecida de haber llevado el curso de admisión con ellos!"
+    }
+]
