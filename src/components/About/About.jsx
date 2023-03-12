@@ -3,7 +3,7 @@ import Loadable from "react-loadable"
 
 import './About.scss';
 
-const loader=()=>(<div> Loading animating numbers ... </div>)
+const loader=()=>(<div> Cargando ... </div>)
 const MyLoadableAnimatedNumbers = Loadable({
   loader: () => import("../../components/AnimatedNumbers/AnimatedNumbers"),
   loading: loader,
