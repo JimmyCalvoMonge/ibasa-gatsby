@@ -1,4 +1,5 @@
 import * as React from "react"
+import { SEO } from "../components/seo"
 import '../pages_styles/Blogs/Blogs.scss';
 
 // Import base Layout
@@ -56,3 +57,7 @@ const Blogs = () => {
 }
 
 export default Blogs;
+
+export const Head = () => (
+    <SEO title="Información Importante" />
+  )

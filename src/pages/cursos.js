@@ -1,4 +1,5 @@
 import * as React from "react"
+import { SEO } from "../components/seo"
 import '../pages_styles/Courses/Courses.scss';
 
 // Import base Layout
@@ -48,3 +49,7 @@ const Courses = () => {
 }
 
 export default Courses;
+
+export const Head = () => (
+    <SEO title="Cursos" />
+  )

@@ -1,4 +1,5 @@
 import * as React from "react"
+import { SEO } from "../components/seo"
 
 // Import styles
 import "../styles/bootstrap.min.css";
@@ -59,4 +60,6 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Ibasa</title>
+export const Head = () => (
+  <SEO />
+)

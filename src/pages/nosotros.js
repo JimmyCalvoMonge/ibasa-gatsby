@@ -1,5 +1,6 @@
 import * as React from "react"
 import Loadable from "react-loadable"
+import { SEO } from "../components/seo"
 
 // Import Page css
 import '../pages_styles/About/About.scss'
@@ -195,4 +196,7 @@ const AboutPage = () => {
 }
 
 export default AboutPage
-export const Head = () => <title>Ibasa | Sobre Nosotros</title>
+
+export const Head = () => (
+  <SEO title="Sobre Nosotros" />
+)

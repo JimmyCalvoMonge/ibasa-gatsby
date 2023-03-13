@@ -1,5 +1,5 @@
-
 import * as React from "react"
+import { SEO } from "../components/seo"
 import '../pages_styles/Teachers/Teachers.scss';
 
 // Import base Layout
@@ -64,3 +64,7 @@ const Teachers = () => {
 }
 
 export default Teachers;
+
+export const Head = () => (
+    <SEO title="Profesores Calificados" />
+  )

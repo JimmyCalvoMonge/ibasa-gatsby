@@ -1,4 +1,5 @@
 import * as React from "react"
+import { SEO } from "../components/seo"
 import '../pages_styles/Contact/Contact.scss';
 
 // Import base Layout
@@ -86,3 +87,23 @@ const Contact = () => {
 }
 
 export default Contact;
+
+export const Head = () => (
+    <SEO title="Contacto">
+        <script type="application/ld+json">
+            {`
+                {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "url": "https://ibasa-gatsby.vercel.app/",
+                "name": "Instituto Ibasa",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+506 8445 6161",
+                    "contactType": "Customer Support"
+                }
+                }
+            `}
+        </script>
+    </SEO>
+  )
