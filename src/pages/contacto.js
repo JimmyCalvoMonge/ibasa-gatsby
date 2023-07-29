@@ -28,8 +28,6 @@ const Contacto = () => {
             </div>
         </section>
 
-        
-
         <section className="ftco-section contact-section">
             <div className="container">
 
@@ -65,7 +63,7 @@ const Contacto = () => {
 
         <h6 style={{textAlign:"center"}}> ¡Escríbanos y con gusto le atenderemos todas sus dudas!</h6>
 		
-		<section className="ftco-section ftco-no-pt ftco-no-pb contact-section" style={{marginBottom:"5%"}}>
+		<section style={{marginBottom:"5%"}}>
 			<div className="container">
 				<div className="row d-flex align-items-stretch no-gutters">
 					<div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
@@ -77,7 +75,19 @@ const Contacto = () => {
                                 <input type="text" className="form-control" placeholder="Email"></input>
                             </div>
                             <div className="form-group">
-                                <input type="text" className="form-control" placeholder="Asunto"></input>
+                                <select name="" id="" className="form-control">
+                                    <option value="" style={{backgroundColor:"white"}}>Seleccione un Curso ...</option>
+                                    <option value="" style={{backgroundColor:"white"}}>Examen de admisión UCR-UNA</option>
+                                    <option value="" style={{backgroundColor:"white"}}>Examen de admisión TEC</option>
+                                    <option value="" style={{backgroundColor:"white"}}>Inglés Startup</option>
+                                    <option value="" style={{backgroundColor:"white"}}>Bachillerato por Madurez</option>
+                                    <option value="" style={{backgroundColor:"white"}}>Educación Diversificada a Distancia (EDAD)</option>
+                                    <option value="" style={{backgroundColor:"white"}}>Tercer Ciclo</option>
+                                    <option value="" style={{backgroundColor:"white"}}>Curso DiMA</option>
+                                    <option value="" style={{backgroundColor:"white"}}>Prueba de Habilidades Cuantitativas</option>
+                                    <option value="" style={{backgroundColor:"white"}}>Nivelación Matemática</option>
+                                    <option value="" style={{backgroundColor:"white"}}>Prueba de Diagnóstico de Matemática del TEC</option>
+                                </select>
                             </div>
                             <div className="form-group">
                                 <textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="Mensaje"></textarea>

@@ -1,5 +1,4 @@
 import * as React from "react"
-
 import './Request.scss';
 
 const Request= () => {
@@ -29,33 +28,36 @@ const Request= () => {
                       <input type="text" className="form-control" placeholder="Correo Electrónico"></input>
                     </div>
                   </div>
-                  <div className="d-md-flex">
-                    <div className="form-group">
+                  <div className="form-group">
                       <div className="form-field">
                         <div className="select-wrap">
                           <div className="icon"><span className="ion-ios-arrow-down"></span></div>
                           <select name="" id="" className="form-control">
                             <option value="">Seleccione un Curso ...</option>
-                            <option value="">Art Lesson</option>
-                            <option value="">Language Lesson</option>
-                            <option value="">Music Lesson</option>
-                            <option value="">Sports</option>
-                            <option value="">Other Services</option>
+                            <option value="">Examen de admisión UCR-UNA</option>
+                            <option value="">Examen de admisión TEC</option>
+                            <option value="">Inglés Startup</option>
+                            <option value="">Bachillerato por Madurez</option>
+                            <option value="">Educación Diversificada a Distancia (EDAD)</option>
+                            <option value="">Tercer Ciclo</option>
+                            <option value="">Curso DiMA</option>
+                            <option value="">Prueba de Habilidades Cuantitativas</option>
+                            <option value="">Nivelación Matemática</option>
+                            <option value="">Prueba de Diagnóstico de Matemática del TEC</option>
                           </select>
                         </div>
                       </div>
-                    </div>
-                    <div className="form-group ml-md-4">
-                      <input type="text" className="form-control" placeholder="Teléfono"></input>
-                    </div>
                   </div>
                   <div className="d-md-flex">
                     <div className="form-group">
-                      <textarea name="" id="" cols="30" rows="3" className="form-control" placeholder="Mensaje"></textarea>
+                    <input type="text" className="form-control" placeholder="Teléfono"></input>
                     </div>
-                    <div className="form-group ml-md-4">
-                      <input type="submit" value="Solicitar Información" className="btn btn-primary py-3 px-4"></input>
-                    </div>
+                  </div>
+                  <div className="form-group">
+                    <textarea name="" id="" cols="30" rows="5" className="form-control" placeholder="Mensaje"></textarea>
+                  </div>
+                  <div className="form-group ml-md-4">
+                    <input type="submit" value="Solicitar Información" className="btn btn-primary py-3 px-4"></input>
                   </div>
                 </form>
               </div>
