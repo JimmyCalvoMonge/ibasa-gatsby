@@ -1,9 +1,14 @@
 import * as React from "react"
+import {isMobile} from 'react-device-detect';
 import "../../styles/open-iconic-bootstrap.min.css"
 import "../../styles/style.css"
 
 var base_url = process.env.REACT_APP_ROOT_URL;
-
+if(isMobile) {
+  var whatsapp_link = "https://api.whatsapp.com/send?phone=50684456161"
+} else {
+  var whatsapp_link = "https://web.whatsapp.com/send?phone=50684456161"
+}
 const NavBarLight = () =>  {
   return (
     <div className="bg-top navbar-light">
@@ -17,15 +22,19 @@ const NavBarLight = () =>  {
                 <div className="col-md d-flex topper align-items-center align-items-stretch py-md-4">
                   <div className="icon d-flex justify-content-center align-items-center"><span className="icon-paper-plane"></span></div>
                   <div className="text">
+                    <a href="mailto:institutoibasa.alajuela@gmail.com" target={'_blank'}>
                     <span>Email</span>
                     <span>institutoibasa.alajuela@gmail.com</span>
+                    </a>
                   </div>
                 </div>
                 <div className="col-md d-flex topper align-items-center align-items-stretch py-md-4">
                   <div className="icon d-flex justify-content-center align-items-center"><span className="icon-phone2"></span></div>
                   <div className="text">
+                  <a href={whatsapp_link} target={'_blank'}>
                     <span>Teléfono</span>
                     <span>+ 506 8445 6161</span>
+                  </a>
                   </div>
                 </div>
                 <div className="col-md topper d-flex align-items-center justify-content-end">
