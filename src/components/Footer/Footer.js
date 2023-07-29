@@ -9,6 +9,8 @@ if(isMobile) {
     var whatsapp_link = "https://web.whatsapp.com/send?phone=50684456161"
 }
 
+var FullBlogsData = require('../../pages_styles/Blogs/FullBlogsData.json');
+
 const Footer = () =>  {
   return (
     <footer className="ftco-footer ftco-bg-dark ftco-section">
@@ -32,7 +34,7 @@ const Footer = () =>  {
                     <div className="block-21 mb-4 d-flex">
                     <a className="blog-img mr-4 footer_blog_image" href={`${base_url}`}><p style={{'display':'none'}}>Image</p></a>
                     <div className="text">
-                        <h3 className="heading"><a href={`${base_url}/blogs/blog_1`}> Instituto IBASA Información 1</a></h3>
+                        <h3 className="heading"><a href={`${base_url}/blogs/blog_1`}> {FullBlogsData[0].title}</a></h3>
                         <div className="meta">
                         <div><a href={`${base_url}`}><span className="icon-calendar"></span> June 27, 2019</a></div>
                         </div>
@@ -41,7 +43,7 @@ const Footer = () =>  {
                     <div className="block-21 mb-5 d-flex">
                     <a className="blog-img mr-4 footer_blog_image" href={`${base_url}`}><p style={{'display':'none'}}>Image</p></a>
                     <div className="text">
-                        <h3 className="heading"><a href={`${base_url}/blogs/blog_2`}>Instituto IBASA Información 3</a></h3>
+                        <h3 className="heading"><a href={`${base_url}/blogs/blog_2`}>{FullBlogsData[1].title}</a></h3>
                         <div className="meta">
                         <div><a href={`${base_url}`}><span className="icon-calendar"></span> June 27, 2019</a></div>
                         </div>
