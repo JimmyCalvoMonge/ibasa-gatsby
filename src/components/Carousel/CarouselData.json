@@ -8,19 +8,19 @@
     {
     "id": "carousel_2",
     "title":"Exámenes de Admisión",
-    "description":"Esta es una pequeña descripción de lo que trata esta oferta",
-    "href": "nosotros"
-    },
-    {
-    "id": "carousel_3",
-    "title":"Bachillerato",
-    "description":"Esta es una pequeña descripción de lo que trata esta oferta",
+    "description":"En IBASA le garantizamos aprobar los exámenes de admisión mediante nuestros cursos intensivos y de alta calidad.",
     "href": "nosotros"
     },
     {
     "id": "carousel_4",
     "title":"Cursos de Inglés",
-    "description":"Esta es una pequeña descripción de lo que trata esta oferta",
+    "description":"Nuestro curso de Inglés StartUp ofrece una opción innovadora, comprobada y completa para obtener un dominio del idioma Inglés.",
+    "href": "nosotros"
+    },
+    {
+    "id": "carousel_3",
+    "title":"Bachillerato",
+    "description":"Ofrecemos preparación y acompañamiento para realizar los exámenes de Bachillerato por madurez y Educación Diversificada del MEP.",
     "href": "nosotros"
     }
 ]

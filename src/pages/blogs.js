@@ -1,10 +1,9 @@
 import * as React from "react"
 import { SEO } from "../components/seo"
 import '../pages_styles/Blogs/Blogs.scss';
-
-// Import base Layout
 import Layout from "../components/layout"
 
+var base_url = process.env.REACT_APP_ROOT_URL;
 var FullBlogsData = require('../pages_styles/Blogs/FullBlogsData.json');
 
 const Blogs = () => {
@@ -40,7 +39,7 @@ const Blogs = () => {
                         <h3 class="heading"><a href="/">{blog.title}</a></h3>
                         <p>{blog.description}</p>
                         <div class="d-flex align-items-center mt-4">
-                            <p class="mb-0"><a href="/" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+                            <p class="mb-0"><a href={`${base_url}/blogs/${blog.id}`} class="btn btn-primary">Leer más<span class="ion-ios-arrow-round-forward"></span></a></p>
                             <p class="ml-auto mb-0">
                                 <a href="/" class="mr-2">{blog.author}</a>
                             </p>

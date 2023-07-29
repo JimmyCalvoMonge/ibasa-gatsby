@@ -1,7 +1,8 @@
 import * as React from "react"
-import './Blogs.scss';
+import '../../pages_styles/Blogs/Blogs.scss';
 var base_url = process.env.REACT_APP_ROOT_URL;
-var BlogsData = require('./BlogsData.json');
+var BlogsData = require('../../pages_styles/Blogs/FullBlogsData.json');
+var BlogsDataSmall = [BlogsData[0], BlogsData[1], BlogsData[2]]
 
 const Blogs= () => {
   return (
@@ -15,7 +16,7 @@ const Blogs= () => {
             </div>
           </div>
           <div className="row">
-              {BlogsData.map(blog =><div className="col-md-6 col-lg-4 ftco-animate" key={blog.id}>
+              {BlogsDataSmall.map(blog =><div className="col-md-6 col-lg-4 ftco-animate" key={blog.id}>
               <div className="blog-entry">
                 <a href="blog-single.html" className={`block-20 d-flex align-items-end blog_1 ${blog.id}`}>
                   <div className="meta-date text-center p-2">
@@ -28,10 +29,9 @@ const Blogs= () => {
                   <h3 className="heading"><a href={`${base_url}`}>{blog.title}</a></h3>
                   <p>{blog.description}</p>
                   <div className="d-flex align-items-center mt-4">
-                    <p className="mb-0"><a href={`${base_url}`} className="btn btn-primary"> Leer más <span className="ion-ios-arrow-round-forward"></span></a></p>
+                    <p className="mb-0"><a href={`${base_url}/blogs/${blog.id}`} className="btn btn-primary"> Leer más <span className="ion-ios-arrow-round-forward"></span></a></p>
                     <p className="ml-auto mb-0">
                       <a href={`${base_url}`} className="mr-2">{blog.author}</a>
-                      {/* <a href="#" className="meta-chat"><span className="icon-chat"></span> 3</a> */}
                     </p>
                   </div>
                 </div>

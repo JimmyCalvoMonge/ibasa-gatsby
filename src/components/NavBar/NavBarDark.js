@@ -19,12 +19,12 @@ const NavBarDark = () =>  {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <li className={"nav-item navbar-item" + (url === base_url ?" active" : "")}><a href="/" className="nav-link pl-0">Inicio</a></li>
-            <li className={"nav-item navbar-item" + (url === `${base_url}/nosotros` ?" active" : "")}><a href="/nosotros" className="nav-link">Nosotros</a></li>
-            <li className={"nav-item navbar-item" + (url === `${base_url}/cursos` ?" active" : "")}><a href="/cursos" className="nav-link">Cursos</a></li>
-            <li className={"nav-item navbar-item" + (url === `${base_url}/profes` ?" active" : "")}><a href="/profes" className="nav-link">Profesores</a></li>
-            <li className={"nav-item navbar-item" + (url === `${base_url}/blogs` ?" active" : "")}><a href="/blogs" className="nav-link">Blog</a></li>
-            <li className={"nav-item navbar-item" + (url === `${base_url}/contacto` ?" active" : "")}><a href="/contacto" className="nav-link">Contacto</a></li>
+            <li className={"nav-item navbar-item" + (url === base_url ?" active" : "")}><a href={base_url} className="nav-link pl-0">Inicio</a></li>
+            <li className={"nav-item navbar-item" + (url === `${base_url}/nosotros` ?" active" : "")}><a href={`${base_url}/nosotros`} className="nav-link">Nosotros</a></li>
+            <li className={"nav-item navbar-item" + (url === `${base_url}/cursos` ?" active" : "")}><a href={`${base_url}/cursos`} className="nav-link">Cursos</a></li>
+            <li className={"nav-item navbar-item" + (url === `${base_url}/profes` ?" active" : "")}><a href={`${base_url}/profes`} className="nav-link">Profesores</a></li>
+            <li className={"nav-item navbar-item" + (url === `${base_url}/blogs` ?" active" : "")}><a href={`${base_url}/blogs`} className="nav-link">Blog</a></li>
+            <li className={"nav-item navbar-item" + (url === `${base_url}/contacto` ?" active" : "")}><a href={`${base_url}/contacto`} className="nav-link">Contacto</a></li>
           </Nav>
         </Navbar.Collapse>
       </Container>

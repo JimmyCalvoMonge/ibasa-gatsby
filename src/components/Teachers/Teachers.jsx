@@ -1,8 +1,9 @@
 import * as React from "react"
-import './Teachers.scss';
+import '../../pages_styles/Teachers/Teachers.scss';
 
 var base_url = process.env.REACT_APP_ROOT_URL;
-var TeachersData = require('./TeachersData.json');
+var TeachersData = require('../../pages_styles/Teachers/FullTeachersData.json');
+var TeachersDataSmall = [TeachersData[0], TeachersData[1], TeachersData[2], TeachersData[3]]
 
 const Teachers= () => {
   return (
@@ -12,13 +13,12 @@ const Teachers= () => {
           <div className="row justify-content-center mb-5 pb-2">
           <div className="col-md-8 text-center heading-section ftco-animate">
             <h2 className="mb-4">Profesores Certificados</h2>
-            <p>Nuestro personal cuenta con una amplia experiencia en educación, cursos presenciales y virtuales. Recibirá una atención de 
+            <p>Nuestro personal cuenta con una amplia experiencia en educación, tanto en cursos presenciales como virtuales. Recibirá una atención de 
             calidad de la mano de los expertos.</p>
           </div>
           </div>	
           <div className="row">
-
-            {TeachersData.map(teacher =><div className="col-md-6 col-lg-3 ftco-animate" key={teacher.id}>
+            {TeachersDataSmall.map(teacher =><div className="col-md-6 col-lg-3 ftco-animate" key={teacher.id}>
               <div className="staff">
                 <div className="img-wrap d-flex align-items-stretch">
                   <div className={`img align-self-stretch ${teacher.id}`}></div>

@@ -1,66 +1,92 @@
 [
     {
     "id": "course_1",
-    "name":"Nombre del curso",
+    "name":"Examen de Admisión UCR-UNA",
     "prof":"Jorge Gómez",
     "seats":"50",
     "type":"virtual",
-    "description":"Esta es una pequeña descripción de lo que trata este curso"
+    "description":"Programas dirigidos para personas que desean cursar estudios en la Universidad de Costa Rica y Universidad Nacional. Con las clases de nuestro Instituto IBASA podrá aprobar los exámenes de admisión de las pruebas (PAA).",
+    "url": "admision-ucr-una"
     },
     {
     "id": "course_2",
-    "name":"Nombre del curso",
+    "name":"Examen de Admisión TEC",
     "prof":"Jorge Gómez",
     "seats":"50",
     "type":"virtual",
-    "description":"Esta es una pequeña descripción de lo que trata este curso"
+    "description":"En Instituto IBASA impartimos clases de apoyo para preparar a estudiantes para la prueba de admisión deL Instituto Tecnológico (TEC). Las clases abarcan los temas de razonamiento lógico matemático y verbal.",
+    "url": "admision-tec"
     },
     {
     "id": "course_3",
-    "name":"Nombre del curso",
+    "name":"Curso de Inglés StartUp",
     "prof":"Jorge Gómez",
     "seats":"50",
     "type":"virtual",
-    "description":"Esta es una pequeña descripción de lo que trata este curso"
+    "description":"Startup es el nuevo curso de inglés general para adultos y jóvenes que quieren abrirse camino en el mundo y necesitan inglés para hacerlo. Este innovador curso multidisciplinar de ocho niveles es un programa de idiomas completo.",
+    "url": "ingles-startup"
     },
     {
     "id": "course_4",
-    "name":"Nombre del curso",
+    "name":"Bachillerato por Madurez Suficiente",
     "prof":"Jorge Gómez",
     "seats":"50",
     "type":"virtual",
-    "description":"Esta es una pequeña descripción de lo que trata este curso"
+    "description":"Programa dirigido a personas mayores de edad que tienen la educación general básica aprobada y que por diversos motivos no pudieron concluir sus estudios en el sistema tradicional.",
+    "url": "bachillerato-madurez"
     },
     {
     "id": "course_5",
-    "name":"Nombre del curso",
+    "name":"Educación Diversificada a Distancia (EDAD)",
     "prof":"Jorge Gómez",
     "seats":"50",
     "type":"virtual",
-    "description":"Esta es una pequeña descripción de lo que trata este curso"
+    "description":"Programa dirigido a personas que cuentan con la educación general básica aprobada (noveno año de colegio aprobado o tercer ciclo de la EGBA aprobado) edad mínima de 15 años.",
+    "url": "educacion-diversificada-distancia"
     },
     {
     "id": "course_6",
-    "name":"Nombre del curso",
+    "name":"Tercer Ciclo",
     "prof":"Jorge Gómez",
     "seats":"50",
     "type":"virtual",
-    "description":"Esta es una pequeña descripción de lo que trata este curso"
+    "description":"Programa dirigido a personas que cuenta con I y II Ciclo (sexto grado) de la Educación General Básica, la edad mínima para ingresar a este programa es de 14 años. También llamado “Ujarrás”",
+    "url": "tercer-ciclo"
     },
     {
     "id": "course_7",
-    "name":"Nombre del curso",
+    "name":"Nivelación de Matemáticas",
     "prof":"Jorge Gómez",
     "seats":"50",
     "type":"virtual",
-    "description":"Esta es una pequeña descripción de lo que trata este curso"
+    "description":"Clases para la prueba de nivelación de matemáticas. Las clases impartidas son con el objetivo de reforzar las destrezas matemáticas para que el estudiante pueda aprobar el examen.",
+    "url": "nivelacion-matematicas"
     },
     {
     "id": "course_8",
-    "name":"Nombre del curso",
+    "name":"Prueba de Habilidades Cuantitativas",
     "prof":"Jorge Gómez",
     "seats":"50",
     "type":"virtual",
-    "description":"Esta es una pequeña descripción de lo que trata este curso"
+    "description":"Clases ideales para estudiantes que buscan ingresar a carreras tales, como: Física, Química, Farmacia, Ingeniería y más. Con IBASA podrá aprobar la Prueba de Habilidades Cuantitativas.",
+    "url": "habilidades-cuantitativas"
+    },
+    {
+    "id": "course_9",
+    "name":"Curso de Diagnóstico de matemática del TEC",
+    "prof":"Jorge Gómez",
+    "seats":"50",
+    "type":"virtual",
+    "description":"Clases creadas para la prueba de Diagnóstico de Matemática del TEC, IBASA es el instituto ideal para reforzar contenidos de Matemática General y aprobar esta prueba.",
+    "url": "diagnostico-matematica-tec"
+    },
+    {
+    "id": "course_10",
+    "name":"Curso DiMA",
+    "prof":"Jorge Gómez",
+    "seats":"50",
+    "type":"virtual",
+    "description":"Las clases para el curso DiMA son con la finalidad de que los estudiantes aprueben el diagnóstico de matemática, asimismo que adquieran los conocimientos y destrezas matemáticos.",
+    "url": "dima"
     }
 ]

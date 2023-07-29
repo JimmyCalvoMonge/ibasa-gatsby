@@ -51,8 +51,8 @@ const Carousel= () => {
                   <span className="flaticon-teacher"></span>
                 </div>
                 <div className="media-body p-2 mt-3">
-                  <h3 className="heading">Certified Teachers</h3>
-                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                  <h3 className="heading">Profesores Certificados</h3>
+                  <p>Nuestros profesores cuentan con gran experiencia en educaci+on y preparación para exámenes de admisión y bachillerato.</p>
                 </div>
               </div>      
             </div>
@@ -62,8 +62,8 @@ const Carousel= () => {
                   <span className="flaticon-reading"></span>
                 </div>
                 <div className="media-body p-2 mt-3">
-                  <h3 className="heading">Special Education</h3>
-                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                  <h3 className="heading">Clases Virtuales</h3>
+                  <p>Nuestro modelo de clases virtuales se ajusta a las necesidades y horario de nuestros estudiantes.</p>
                 </div>
               </div>    
             </div>
@@ -73,8 +73,8 @@ const Carousel= () => {
                   <span className="flaticon-books"></span>
                 </div>
                 <div className="media-body p-2 mt-3">
-                  <h3 className="heading">Book &amp; Library</h3>
-                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                  <h3 className="heading">Recursos Actualizados</h3>
+                  <p>Todo nuestro material se actualiza con los temas y evaluaciones más recientes del MEP y Universidades Públicas.</p>
                 </div>
               </div>      
             </div>
@@ -84,8 +84,8 @@ const Carousel= () => {
                   <span className="flaticon-diploma"></span>
                 </div>
                 <div className="media-body p-2 mt-3">
-                  <h3 className="heading">Sport Clubs</h3>
-                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                  <h3 className="heading">Desempeño Histórico</h3>
+                  <p>IBASA ha sido uno de los institutos privados con mayor promoción histórica en Costa Rica</p>
                 </div>
               </div>      
             </div>

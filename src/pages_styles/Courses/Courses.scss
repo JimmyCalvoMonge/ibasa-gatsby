@@ -2,34 +2,124 @@
     background-image: url(../../assets/images/backgrounds/bg_4.jpg);
 }
 
+.admision_ucr_una_start_image{
+    background-image: url(../../assets/images/courses/Examen-de-Admision-UCR.jpg);
+}
+
+.admision_tec_start_image{
+    background-image: url(../../assets/images/courses/Examen-de-Admision-TEC.jpg);
+}
+
+.ingles_start_image{
+    background-image: url(../../assets/images/courses/Curso-de-Ingles-Startup.jpg);
+}
+
+.bach_madurez_start_image{
+    background-image: url(../../assets/images/courses/bachillerato-por-madurez.jpg);
+}
+
+.clases_gratuitas_start_image{
+    background-image: url(../../assets/images/courses/Clases-Gratuitas.jpg);
+}
+
+.diagnostico_mate_tec_start_image{
+    background-image: url(../../assets/images/courses/Curso-de-Diagnostico-de-Matematica-del-TEC.jpg);
+}
+
+.dima_start_image{
+    background-image: url(../../assets/images/courses/Curso-DiMA.jpg);
+}
+
+.habilidades_cuantitativas_start_image{
+    background-image: url(../../assets/images/courses/Prueba-de-Habilidades-Cuantitativas-1.jpg);
+}
+
+.niv_matematicas_start_image{
+    background-image: url(../../assets/images/courses/Curso-de-Nivelacion-en-Matematica.jpg);
+}
+
+.tercer_ciclo_start_image{
+    background-image: url(../../assets/images/courses/Tercer-Ciclo.jpg);
+}
+
+.ed_diversificada_start_image{
+    background-image: url(../../assets/images/courses/Educacion-Diversificada.jpg);
+}
+
 .course_1{
-    background-image: url(../../assets/images/courses/course-1.jpg)
+    background-image: url(../../assets/images/courses/UCR-UNA.jpg)
 }
 
 .course_2{
-    background-image: url(../../assets/images/courses/course-2.jpg)
+    background-image: url(../../assets/images/courses/TEC.jpg)
 }
 
 .course_3{
-    background-image: url(../../assets/images/courses/course-3.jpg)
+    background-image: url(../../assets/images/courses/Curso-de-Ingles-Startup.jpg)
 }
 
 .course_4{
-    background-image: url(../../assets/images/courses/course-4.jpg)
+    background-image: url(../../assets/images/courses/Bachillerato-por-Madurez-Suficiente.jpg)
 }
 
 .course_5{
-    background-image: url(../../assets/images/courses/course-5.jpg)
+    background-image: url(../../assets/images/courses/Educacion-Diversificada-a-Distancia.jpg)
 }
 
 .course_6{
-    background-image: url(../../assets/images/courses/course-6.jpg)
+    background-image: url(../../assets/images/courses/Tercer-Ciclo.jpg)
 }
 
 .course_7{
-    background-image: url(../../assets/images/courses/course-7.jpg)
+    background-image: url(../../assets/images/courses/Nivelacion-de-Matematicas.jpg)
 }
 
 .course_8{
-    background-image: url(../../assets/images/courses/course-8.jpg)
+    background-image: url(../../assets/images/courses/Prueba-de-Habilidades-Cuantitativas.jpg)
+}
+
+.course_9{
+    background-image: url(../../assets/images/courses/Curso-de-Diagnostico-de-Matematica-del-TEC.jpg)
+}
+
+.course_10{
+    background-image: url(../../assets/images/courses/Curso-DiMA.jpg)
+}
+
+.course_name {
+    min-height: 15%;
+}
+
+.course_description {
+    min-height: 35%;
+}
+
+@media only screen and (max-width: 950px) {
+    .course_description{
+        min-height: 40%;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .course_description{
+        min-height: 45%;
+    }
+}
+
+.course_link{
+    min-height: 10%;
+}
+
+.container_course_info{
+    height: 100%;
+}
+
+.course_cont{
+    margin-bottom: 50%;
+}
+
+@media only screen and (min-width: 770px) {
+    .course_cont{
+        margin-bottom: 10%;
+    }
 }

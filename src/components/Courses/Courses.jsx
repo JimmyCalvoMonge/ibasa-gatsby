@@ -1,7 +1,8 @@
 import * as React from "react"
-import './Courses.scss';
+import '../../pages_styles/Courses/Courses.scss';
 var base_url = process.env.REACT_APP_ROOT_URL;
-var CoursesData = require('./CoursesData.json');
+var CoursesData = require('../../pages_styles/Courses/FullCoursesData.json');
+var CoursesDataSmall = [CoursesData[0], CoursesData[1],CoursesData[2],CoursesData[3]]
 
 const Courses= () => {
   return (
@@ -11,11 +12,11 @@ const Courses= () => {
           <div className="row justify-content-center mb-5 pb-2">
             <div className="col-md-8 text-center heading-section ftco-animate">
               <h2 className="mb-4"><span>Nuestros</span> Cursos</h2>
-              <p>Algunos de nuestros cursos más populares. Mire la lista completa <a href="/cursos">aquí.</a></p>
+              <p>Algunos de nuestros cursos más populares. Mire la lista completa <a href={`${base_url}/cursos`}>aquí.</a></p>
             </div>
           </div>	
           <div className="row">
-          {CoursesData.map(course =><div className="col-md-3 course ftco-animate course_cont" key={course.id}>
+          {CoursesDataSmall.map(course =><div className="col-md-3 course ftco-animate course_cont" key={course.id}>
               
               <div className={`img ${course.id}`}></div>
               
@@ -28,7 +29,7 @@ const Courses= () => {
                 </p>
                 
                 <div className='course_name'>
-                  <h3><a href={`${base_url}`}>{course.name}</a></h3>
+                  <h3><a href={`/cursos/${course.url}`}>{course.name}</a></h3>
                 </div>
                 
                 <div className='course_description'>
@@ -36,7 +37,7 @@ const Courses= () => {
                 </div>
                 
                 <div className='course_link'>
-                <p><a href={`${base_url}`} className="btn btn-primary">Ir al programa</a></p>
+                <p><a href={`/cursos/${course.url}`} className="btn btn-primary">Ir al programa</a></p>
                 </div>
 
               </div>

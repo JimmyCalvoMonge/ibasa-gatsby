@@ -68,7 +68,7 @@ const AboutPage = () => {
                 <div className="col-md-6 align-items-stretch d-flex">
                     <div className="img img-video d-flex align-items-center about_video_image">
                         <div className="video justify-content-center">
-                          <a href="https://vimeo.com/45830194" className="icon-video popup-vimeo d-flex justify-content-center align-items-center">
+                          <a href="https://www.youtube.com/watch?v=RDzxvLc3Pu4" className="icon-video popup-vimeo d-flex justify-content-center align-items-center">
                             <span className="ion-ios-play"></span>
                           </a>
                         </div>

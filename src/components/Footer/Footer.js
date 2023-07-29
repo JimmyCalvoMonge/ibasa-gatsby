@@ -1,8 +1,15 @@
 import * as React from "react"
+import {isMobile} from 'react-device-detect';
 import '../../components/Footer/Footer.scss'
 var base_url = process.env.REACT_APP_ROOT_URL;
-const Footer = () =>  {
 
+if(isMobile) {
+    var whatsapp_link = "https://api.whatsapp.com/send?phone=50684456161"
+} else {
+    var whatsapp_link = "https://web.whatsapp.com/send?phone=50684456161"
+}
+
+const Footer = () =>  {
   return (
     <footer className="ftco-footer ftco-bg-dark ftco-section">
         <div className="container">
@@ -13,8 +20,8 @@ const Footer = () =>  {
                     <div className="block-23 mb-3">
                     <ul>
                         <li><span className="icon icon-map-marker"></span><span className="text"><a href="https://www.google.es/maps/place/Instituto+IBASA-Alajuela/@10.0164905,-84.2181734,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0f9c5a0054d07:0x9667c861164a0fb5!8m2!3d10.0164693!4d-84.2160421?hl=es&shorturl=1" target={'_blank'} rel="noopener noreferrer">Cómo llegar</a></span></li>
-                        <li><a href={`${base_url}`}><span className="icon icon-phone"></span><span className="text">+506 8445-6161</span></a></li>
-                        <li><a href={`${base_url}`}><span className="icon icon-envelope"></span><span className="text long_text">institutoibasa.alajuela@gmail.com</span></a></li>
+                        <li><a href={whatsapp_link} target={'_blank'}><span className="icon icon-phone"></span><span className="text">+506 8445-6161</span></a></li>
+                        <li><a href={whatsapp_link} target={'_blank'}><span className="icon icon-envelope"></span><span className="text long_text">institutoibasa.alajuela@gmail.com</span></a></li>
                     </ul>
                     </div>
                 </div>
@@ -25,22 +32,18 @@ const Footer = () =>  {
                     <div className="block-21 mb-4 d-flex">
                     <a className="blog-img mr-4 footer_blog_image" href={`${base_url}`}><p style={{'display':'none'}}>Image</p></a>
                     <div className="text">
-                        <h3 className="heading"><a href={`${base_url}`}>Even the all-powerful Pointing has no control about</a></h3>
+                        <h3 className="heading"><a href={`${base_url}/blogs/blog_1`}> Instituto IBASA Información 1</a></h3>
                         <div className="meta">
                         <div><a href={`${base_url}`}><span className="icon-calendar"></span> June 27, 2019</a></div>
-                        <div><a href={`${base_url}`}><span className="icon-person"></span> Admin</a></div>
-                        <div><a href={`${base_url}`}><span className="icon-chat"></span> 19</a></div>
                         </div>
                     </div>
                     </div>
                     <div className="block-21 mb-5 d-flex">
                     <a className="blog-img mr-4 footer_blog_image" href={`${base_url}`}><p style={{'display':'none'}}>Image</p></a>
                     <div className="text">
-                        <h3 className="heading"><a href={`${base_url}`}>Even the all-powerful Pointing has no control about</a></h3>
+                        <h3 className="heading"><a href={`${base_url}/blogs/blog_2`}>Instituto IBASA Información 3</a></h3>
                         <div className="meta">
                         <div><a href={`${base_url}`}><span className="icon-calendar"></span> June 27, 2019</a></div>
-                        <div><a href={`${base_url}`}><span className="icon-person"></span> Admin</a></div>
-                        <div><a href={`${base_url}`}><span className="icon-chat"></span> 19</a></div>
                         </div>
                     </div>
                     </div>
@@ -51,19 +54,18 @@ const Footer = () =>  {
                     <h2 className="ftco-heading-2">Enlaces</h2>
                     <ul className="list-unstyled">
                     <li><a href={`${base_url}`}><span className="ion-ios-arrow-round-forward mr-2"></span>Inicio</a></li>
-                    <li><a href="/nosotros"><span className="ion-ios-arrow-round-forward mr-2"></span>Nosotros</a></li>
-                    <li><a href="/cursos"><span className="ion-ios-arrow-round-forward mr-2"></span>Cursos</a></li>
-                    <li><a href="/profes"><span className="ion-ios-arrow-round-forward mr-2"></span>Profesores</a></li>
-                    <li><a href="/blogs"><span className="ion-ios-arrow-round-forward mr-2"></span>Información</a></li>
+                    <li><a href={`${base_url}/nosotros`}><span className="ion-ios-arrow-round-forward mr-2"></span>Nosotros</a></li>
+                    <li><a href={`${base_url}/cursos`}><span className="ion-ios-arrow-round-forward mr-2"></span>Cursos</a></li>
+                    <li><a href={`${base_url}/profes`}><span className="ion-ios-arrow-round-forward mr-2"></span>Profesores</a></li>
+                    <li><a href={`${base_url}/blogs`}><span className="ion-ios-arrow-round-forward mr-2"></span>Información</a></li>
                     </ul>
                 </div>
                 </div>
                 <div className="col-md-6 col-lg-3">
                 <div className="ftco-footer-widget mb-5">
-                    <h2 className="ftco-heading-2">¡Envíe sus dudas!</h2>
-                    <form action={`${base_url}`} className="subscribe-form">
+                    <h2 className="ftco-heading-2">¡Pruebe una de nuestras clases!</h2>
+                    <form action={`/cursos/clases-gratuitas`} className="subscribe-form">
                     <div className="form-group">
-                        <input type="text" className="form-control mb-2 text-center" placeholder="Correo Electrónico"></input>
                         <input type="submit" value="Solcitar información" className="form-control submit px-3"></input>
                     </div>
                     </form>
