@@ -12,6 +12,7 @@ const Offer= () => {
               <div className="img offer_side_image"></div>
             </div>
             <div className="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
+              <h1> Instituto IBASA</h1>
               <h2 className="mb-4">¿Por qué estudiar con Instituto IBASA?</h2>
               <div className="row mt-5">
                 <div className="col-lg-6">
