@@ -1,13 +1,12 @@
 import * as React from "react"
-
 // Import useLocation hook
 import { useLocation } from '@reach/router';
-
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './NavBar.css';
+
+var base_url = process.env.REACT_APP_ROOT_URL;
 
 const NavBarDark = () =>  {
 
@@ -20,12 +19,12 @@ const NavBarDark = () =>  {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <li className={"nav-item navbar-item" + (url === "/" ?" active" : "")}><a href="/" className="nav-link pl-0">Inicio</a></li>
-            <li className={"nav-item navbar-item" + (url === "/nosotros" ?" active" : "")}><a href="/nosotros" className="nav-link">Nosotros</a></li>
-            <li className={"nav-item navbar-item" + (url === "/cursos" ?" active" : "")}><a href="/cursos" className="nav-link">Cursos</a></li>
-            <li className={"nav-item navbar-item" + (url === "/profes" ?" active" : "")}><a href="/profes" className="nav-link">Profesores</a></li>
-            <li className={"nav-item navbar-item" + (url === "/blogs" ?" active" : "")}><a href="/blogs" className="nav-link">Blog</a></li>
-            <li className={"nav-item navbar-item" + (url === "/contacto" ?" active" : "")}><a href="/contacto" className="nav-link">Contacto</a></li>
+            <li className={"nav-item navbar-item" + (url === base_url ?" active" : "")}><a href="/" className="nav-link pl-0">Inicio</a></li>
+            <li className={"nav-item navbar-item" + (url === `${base_url}/nosotros` ?" active" : "")}><a href="/nosotros" className="nav-link">Nosotros</a></li>
+            <li className={"nav-item navbar-item" + (url === `${base_url}/cursos` ?" active" : "")}><a href="/cursos" className="nav-link">Cursos</a></li>
+            <li className={"nav-item navbar-item" + (url === `${base_url}/profes` ?" active" : "")}><a href="/profes" className="nav-link">Profesores</a></li>
+            <li className={"nav-item navbar-item" + (url === `${base_url}/blogs` ?" active" : "")}><a href="/blogs" className="nav-link">Blog</a></li>
+            <li className={"nav-item navbar-item" + (url === `${base_url}/contacto` ?" active" : "")}><a href="/contacto" className="nav-link">Contacto</a></li>
           </Nav>
         </Navbar.Collapse>
       </Container>

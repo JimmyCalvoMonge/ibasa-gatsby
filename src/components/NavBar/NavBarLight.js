@@ -1,7 +1,8 @@
 import * as React from "react"
-
 import "../../styles/open-iconic-bootstrap.min.css"
 import "../../styles/style.css"
+
+var base_url = process.env.REACT_APP_ROOT_URL;
 
 const NavBarLight = () =>  {
   return (
@@ -9,7 +10,7 @@ const NavBarLight = () =>  {
         <div className="container">
           <div className="row no-gutters d-flex align-items-center align-items-stretch">
             <div className="col-md-4 d-flex align-items-center py-4">
-              <a className="navbar-brand" href="/"> IBASA <span>Costa Rica</span></a>
+              <a className="navbar-brand" href={`${base_url}`}> IBASA <span>Costa Rica</span></a>
             </div>
             <div className="col-lg-8 d-block">
               <div className="row d-flex">
@@ -29,7 +30,7 @@ const NavBarLight = () =>  {
                 </div>
                 <div className="col-md topper d-flex align-items-center justify-content-end">
                   <p className="mb-0">
-                    <a href="/contacto" className="btn py-2 px-3 btn-primary d-flex align-items-center justify-content-center">
+                    <a href={`${base_url}/contacto`} className="btn py-2 px-3 btn-primary d-flex align-items-center justify-content-center">
                       <span>Matriculate Ahora</span>
                     </a>
                   </p>

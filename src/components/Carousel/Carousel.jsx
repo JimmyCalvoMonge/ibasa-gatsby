@@ -1,9 +1,9 @@
 import * as React from "react"
 import Loadable from "react-loadable"
-
 import './Carousel.scss';
 import 'owl.carousel/dist/assets/owl.carousel.css';  
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+var base_url = process.env.REACT_APP_ROOT_URL;
 var CarouselData = require('./CarouselData.json');
 
 const loader=()=>(<div> Cargando ... </div>)
@@ -33,7 +33,7 @@ const Carousel= () => {
               <div className='carousel_text'>
                 <h1 className="mb-4">{carousel.title}</h1>
                 <p>{carousel.description}</p>
-                <p><a href={carousel.href} className="btn btn-primary px-4 py-3 mt-3">Leer más</a></p>
+                <p><a href={`${base_url}/${carousel.href}`} className="btn btn-primary px-4 py-3 mt-3">Leer más</a></p>
               </div>
             </div>
           </div>

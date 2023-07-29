@@ -1,6 +1,6 @@
 import * as React from "react"
 import './Courses.scss';
-
+var base_url = process.env.REACT_APP_ROOT_URL;
 var CoursesData = require('./CoursesData.json');
 
 const Courses= () => {
@@ -28,7 +28,7 @@ const Courses= () => {
                 </p>
                 
                 <div className='course_name'>
-                  <h3><a href="/">{course.name}</a></h3>
+                  <h3><a href={`${base_url}`}>{course.name}</a></h3>
                 </div>
                 
                 <div className='course_description'>
@@ -36,7 +36,7 @@ const Courses= () => {
                 </div>
                 
                 <div className='course_link'>
-                <p><a href="/" className="btn btn-primary">Ir al programa</a></p>
+                <p><a href={`${base_url}`} className="btn btn-primary">Ir al programa</a></p>
                 </div>
 
               </div>

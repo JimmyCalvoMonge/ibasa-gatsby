@@ -2,7 +2,12 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 
-const siteUrl = process.env.URL || `https://ibasa-gatsby.vercel.app`
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+const siteUrl = process.env.REACT_APP_ROOT_URL || `https://ibasa-gatsby.vercel.app`
+
 
 module.exports = {
   siteMetadata: {
