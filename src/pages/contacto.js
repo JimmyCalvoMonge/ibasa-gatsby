@@ -120,7 +120,7 @@ export const Head = () => (
                 {
                 "@context": "https://schema.org",
                 "@type": "Organization",
-                "url": "https://ibasa-gatsby.vercel.app/",
+                "url": ${base_url},
                 "name": "Instituto Ibasa",
                 "contactPoint": {
                     "@type": "ContactPoint",

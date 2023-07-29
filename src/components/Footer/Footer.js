@@ -32,20 +32,20 @@ const Footer = () =>  {
                 <div className="ftco-footer-widget mb-5">
                     <h2 className="ftco-heading-2">Información Reciente</h2>
                     <div className="block-21 mb-4 d-flex">
-                    <a className="blog-img mr-4 footer_blog_image" href={`${base_url}`}><p style={{'display':'none'}}>Image</p></a>
+                    <a className="blog-img mr-4 footer_blog_image" href={`${base_url}/blogs/blog_1`}><p style={{'display':'none'}}>Image</p></a>
                     <div className="text">
                         <h3 className="heading"><a href={`${base_url}/blogs/blog_1`}> {FullBlogsData[0].title}</a></h3>
                         <div className="meta">
-                        <div><a href={`${base_url}`}><span className="icon-calendar"></span> June 27, 2019</a></div>
+                        <div><a href={`${base_url}/blogs/blog_1`}><span className="icon-calendar"></span> {FullBlogsData[0].day} {FullBlogsData[0].month}, {FullBlogsData[0].year} </a></div>
                         </div>
                     </div>
                     </div>
                     <div className="block-21 mb-5 d-flex">
-                    <a className="blog-img mr-4 footer_blog_image" href={`${base_url}`}><p style={{'display':'none'}}>Image</p></a>
+                    <a className="blog-img mr-4 footer_blog_image" href={`${base_url}/blogs/blog_2`}><p style={{'display':'none'}}>Image</p></a>
                     <div className="text">
                         <h3 className="heading"><a href={`${base_url}/blogs/blog_2`}>{FullBlogsData[1].title}</a></h3>
                         <div className="meta">
-                        <div><a href={`${base_url}`}><span className="icon-calendar"></span> June 27, 2019</a></div>
+                        <div><a href={`${base_url}/blogs/blog_2`}><span className="icon-calendar"></span> {FullBlogsData[1].day} {FullBlogsData[1].month}, {FullBlogsData[1].year}</a></div>
                         </div>
                     </div>
                     </div>
@@ -66,7 +66,7 @@ const Footer = () =>  {
                 <div className="col-md-6 col-lg-3">
                 <div className="ftco-footer-widget mb-5">
                     <h2 className="ftco-heading-2">¡Pruebe una de nuestras clases!</h2>
-                    <form action={`/cursos/clases-gratuitas`} className="subscribe-form">
+                    <form action={`${base_url}/cursos/clases-gratuitas`} className="subscribe-form">
                     <div className="form-group">
                         <input type="submit" value="Solcitar información" className="form-control submit px-3"></input>
                     </div>
