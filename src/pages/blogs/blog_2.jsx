@@ -5,13 +5,13 @@ import '../../pages_styles/Blogs/Blogs.scss';
 const Blog2 = () => {
   return (
     <Layout>
-        <section class="hero-wrap hero-wrap-2 blogs_start_image">
-          <div class="overlay"></div>
-          <div class="container">
-              <div class="row no-gutters slider-text align-items-center justify-content-center">
-              <div class="col-md-9 ftco-animate text-center">
-                  <h1 class="mb-2 bread">Información Importante </h1>
-                  <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Inicio <i class="ion-ios-arrow-forward"></i></a></span> <span>Blogs <i class="ion-ios-arrow-forward"></i></span></p>
+        <section className="hero-wrap hero-wrap-2 blogs_start_image">
+          <div className="overlay"></div>
+          <div className="container">
+              <div className="row no-gutters slider-text align-items-center justify-content-center">
+              <div className="col-md-9 ftco-animate text-center">
+                  <h1 className="mb-2 bread">Información Importante </h1>
+                  <p className="breadcrumbs"><span className="mr-2"><a href="index.html">Inicio <i className="ion-ios-arrow-forward"></i></a></span> <span>Blogs <i className="ion-ios-arrow-forward"></i></span></p>
               </div>
               </div>
           </div>

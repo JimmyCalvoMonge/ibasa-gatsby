@@ -11,37 +11,37 @@ const Blogs = () => {
   return (
     <Layout>
 
-        <section class="hero-wrap hero-wrap-2 blogs_start_image">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row no-gutters slider-text align-items-center justify-content-center">
-                <div class="col-md-9 ftco-animate text-center">
-                    <h1 class="mb-2 bread">Información Importante </h1>
-                    <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Inicio <i class="ion-ios-arrow-forward"></i></a></span> <span>Blogs <i class="ion-ios-arrow-forward"></i></span></p>
+        <section className="hero-wrap hero-wrap-2 blogs_start_image">
+            <div className="overlay"></div>
+            <div className="container">
+                <div className="row no-gutters slider-text align-items-center justify-content-center">
+                <div className="col-md-9 ftco-animate text-center">
+                    <h1 className="mb-2 bread">Información Importante </h1>
+                    <p className="breadcrumbs"><span className="mr-2"><a href="index.html">Inicio <i className="ion-ios-arrow-forward"></i></a></span> <span>Blogs <i className="ion-ios-arrow-forward"></i></span></p>
                 </div>
                 </div>
             </div>
         </section>
 
-        <section class="ftco-section bg-light">
-            <div class="container">
-                <div class="row">
-                    {FullBlogsData.map(blog =><div class="col-md-6 col-lg-4 ftco-animate" key={blog.id}>
-                    <div class="blog-entry">
-                        <a href="blog-single.html" class={`block-20 d-flex align-items-end ${blog.id}`}>
-                            <div class="meta-date text-center p-2">
-                            <span class="day">{blog.day}</span>
-                            <span class="mos">{blog.month}</span>
-                            <span class="yr">{blog.year}</span>
+        <section className="ftco-section bg-light">
+            <div className="container">
+                <div className="row">
+                    {FullBlogsData.map(blog =><div className="col-md-6 col-lg-4 ftco-animate" key={blog.id}>
+                    <div className="blog-entry">
+                        <a href="blog-single.html" className={`block-20 d-flex align-items-end ${blog.id}`}>
+                            <div className="meta-date text-center p-2">
+                            <span className="day">{blog.day}</span>
+                            <span className="mos">{blog.month}</span>
+                            <span className="yr">{blog.year}</span>
                         </div>
                         </a>
-                        <div class="text bg-white p-4">
-                        <h3 class="heading"><a href="/">{blog.title}</a></h3>
+                        <div className="text bg-white p-4">
+                        <h3 className="heading"><a href="/">{blog.title}</a></h3>
                         <p>{blog.description}</p>
-                        <div class="d-flex align-items-center mt-4">
-                            <p class="mb-0"><a href={`${base_url}/blogs/${blog.id}`} class="btn btn-primary">Leer más<span class="ion-ios-arrow-round-forward"></span></a></p>
-                            <p class="ml-auto mb-0">
-                                <a href="/" class="mr-2">{blog.author}</a>
+                        <div className="d-flex align-items-center mt-4">
+                            <p className="mb-0"><a href={`${base_url}/blogs/${blog.id}`} className="btn btn-primary">Leer más<span className="ion-ios-arrow-round-forward"></span></a></p>
+                            <p className="ml-auto mb-0">
+                                <a href="/" className="mr-2">{blog.author}</a>
                             </p>
                         </div>
                         </div>

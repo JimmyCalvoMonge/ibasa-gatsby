@@ -23,7 +23,7 @@ const Footer = () =>  {
                     <ul>
                         <li><span className="icon icon-map-marker"></span><span className="text"><a href="https://www.google.es/maps/place/Instituto+IBASA-Alajuela/@10.0164905,-84.2181734,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0f9c5a0054d07:0x9667c861164a0fb5!8m2!3d10.0164693!4d-84.2160421?hl=es&shorturl=1" target={'_blank'} rel="noopener noreferrer">Cómo llegar</a></span></li>
                         <li><a href={whatsapp_link} target={'_blank'}><span className="icon icon-phone"></span><span className="text">+506 8445-6161</span></a></li>
-                        <li><a href={whatsapp_link} target={'_blank'}><span className="icon icon-envelope"></span><span className="text long_text">institutoibasa.alajuela@gmail.com</span></a></li>
+                        <li><a href="mailto:institutoibasa.alajuela@gmail.com" target={'_blank'}><span className="icon icon-envelope"></span><span className="text long_text">institutoibasa.alajuela@gmail.com</span></a></li>
                     </ul>
                     </div>
                 </div>
