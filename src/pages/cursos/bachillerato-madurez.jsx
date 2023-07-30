@@ -1,10 +1,27 @@
 import * as React from "react"
+import { Helmet } from 'react-helmet';
 import Layout from "../../components/layout"
 import '../../pages_styles/Courses/Courses.scss';
+import bms_1 from "../../assets/images/gallery/Bachillerato-por-Madurez-suficiente-1.jpg";
+import bms_2 from "../../assets/images/gallery/Bachillerato-por-Madurez-suficiente-2.jpg";
+import bms_3 from "../../assets/images/gallery/Bachillerato-por-Madurez-suficiente-3.jpg";
+import bms_4 from "../../assets/images/gallery/Bachillerato-por-Madurez-suficiente-4.jpg";
+import bms_5 from "../../assets/images/gallery/Bachillerato-por-Madurez-suficiente-5.jpg";
+import bms_6 from "../../assets/images/gallery/Bachillerato-por-Madurez-suficiente-6.jpg";
+import bms_7 from "../../assets/images/gallery/Bachillerato-por-Madurez-suficiente-7.jpg";
+
+import boleta1 from '../../assets/files/24-2-22._boleta_recurso_revocatoria_composicion_y_ortografia_2022-edad_2022_0.pdf';
+import boleta2 from '../../assets/files/24-2-2022-boleta-recurso-revocatoria-items-bxm_2022.pdf';
+import boleta3 from '../../assets/files/formulario-de-solicitud-de-titulo-de-bachiller-en-educacion-media.pdf';
+
+var base_url = process.env.REACT_APP_ROOT_URL;
 
 const BachMadurez = () => {
   return (
     <Layout>
+        <Helmet>
+          <title>IBASA | Bachillerato por Madurez </title>
+        </Helmet>
         <section className="hero-wrap hero-wrap-2 bach_madurez_start_image">
         <div className="overlay"></div>
         <div className="container">
@@ -14,6 +31,398 @@ const BachMadurez = () => {
                 <p className="breadcrumbs"><span className="mr-2"><a href="/">Inicio<i className="ion-ios-arrow-forward"></i></a></span> <span>Cursos <i className="ion-ios-arrow-forward"></i></span></p>
             </div>
             </div>
+        </div>
+        </section>
+
+        <section>
+        <div className="container">
+
+          <div className="row d-flex align-items-stretch no-gutters">
+            <div className="col-md-6 p-4 p-md-5 order-md-last bg-light" style={{textAlign:"center"}}>
+            <h3> Información general </h3>
+            <p>
+            El programa de <strong>Bachillerato por Madurez Suficiente</strong> es un programa
+            dirigido a personas mayores de edad que tienen la educación general
+            básica aprobada (noveno año de colegio aprobado o tercer ciclo de la EGBA aprobado)
+            y que por diversos motivos no pudieron concluir sus estudios en el sistema tradicional (colegios).</p>
+            <p>
+            El plan de estudios consta de 6 asignaturas:
+            </p>
+            <ul style={{textAlign:"left"}}>
+              <li>Ciencias <strong>(debe seleccionar una materia entre Biología, Química o Física)</strong>.</li>
+              <li>Educación Cívica.</li>
+              <li>Español.</li>
+              <li>Estudios Sociales.</li>
+              <li>Idioma extranjero <strong>(debe seleccionar entre inglés o francés)</strong>.</li>
+              <li>Matemática.</li>
+            </ul>
+            </div>
+            <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
+              <img src={bms_1} className="App-logo" alt="logo" style={{width:"100%"}} ></img>
+            </div>
+          </div>
+          <div className="row d-flex align-items-stretch no-gutters">
+            <div className="col-md-6 p-4 p-md-5 order-md-last bg-light" style={{textAlign:"center"}}>
+            <form action="#">
+            <h4> ¡Contáctenos para saber más sobre este curso!</h4>
+              <div className="form-group">
+                  <input type="text" className="form-control" placeholder="Nombre Completo"></input>
+              </div>
+              <div className="form-group">
+                  <input type="text" className="form-control" placeholder="Email"></input>
+              </div>
+              <div className="form-group">
+                  <textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="Mensaje"></textarea>
+              </div>
+              <div className="form-group">
+                  <input type="submit" value="Enviar Mensaje" className="btn btn-primary py-3 px-5"></input>
+              </div>
+          </form>
+            </div>
+            <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
+            
+            <p>A partir del año 2003, la asignatura de Educación Cívica ha formado
+            parte del plan de estudios del programa Bachillerato por Madurez Suficiente;
+            por lo tanto, deberán realizar la prueba los postulantes que ingresen por
+            primera vez o aquellos que no hubiesen aprobado al menos una asignatura en
+            este programa antes de esa convocatoria.</p>
+            
+            <p>Para aprobar cada una de las 6 materias, el estudiante debe presentar un
+            examen por cada asignatura y obtener una nota mayor o igual a 70 en cada prueba.</p>
+            
+            
+            <p>El MEP publica todos los contenidos a evaluar para cada asignatura,
+            de manera que el estudiante es libre de buscar la materia que debe
+            estudiar, por los medios que considere convenientes. Dichos contenidos
+            se encuentran en las tablas de especificaciones para las pruebas de
+            certificación de conocimientos del programa Bachillerato por Madurez
+            Suficiente, las cuales pueden consultarse en el sitio web: <a href="https://dgec.mep.go.cr" target={"_blank"}>
+            https://dgec.mep.go.cr.</a></p>
+            
+            <p>La preparación para aprobar los exámenes de Bachillerato por madurez se puede
+            realizar de diferentes maneras:</p>
+
+            <ul>
+              <li>En institutos privados como por ejemplo <a href={base_url}><strong>IBASA</strong></a>.</li>
+              <li>En proyectos públicos que se habilitan únicamente para la segunda convocatoria.</li>
+              <li>Con profesores particulares.</li>
+              <li>En forma autodidacta utilizando por ejemplo los libros del Maestro en Casa del programa ICER.</li>
+            </ul>
+
+            </div>
+          </div>
+          <div className="row d-flex align-items-stretch no-gutters">
+            <div className="col-md-6 p-4 p-md-5 order-md-last bg-light" style={{textAlign:"center"}}>
+            <p>
+            Los exámenes de bachillerato por madurez se aplican dos veces al año en períodos,
+            llamados <strong>primera y segunda convocatoria</strong>. Las fechas de dichas convocatorias,
+            generalmente corresponden a sábados y domingos, <strong>son anunciadas por el MEP a
+            inicios de cada año</strong> a través de un calendario llamado Calendario Anual de
+            las Pruebas de Educación Abierta.</p>
+            
+            <p>El calendario incluye los períodos de inscripción de las pruebas de
+            Bachillerato por Madurez. En esa etapa, los interesados deben pagar
+            un derecho por cada examen que deseen presentar. Además, deben <strong>completar
+            los datos personales en un formulario virtual y enviar los documentos
+            solicitados</strong>, todo esto a través de una aplicación creada por el MEP y
+            habilitada durante el período de inscripción para tal fin, llamada
+            <a href="https://portaldgec.mep.go.cr/yo_aplico/Login" target={"_blanck"}>Yo Aplico</a>.</p>
+            
+            <p>Asimismo, en el calendario se indican las fechas y además,
+            en la página <a href="www.dgec.mep.go.cr" target={"_blank"}>www.dgec.mep.go.cr</a>,
+            las sedes de aplicación de las pruebas, que generalmente corresponden a escuelas y
+            colegios públicos de todo el territorio nacional.
+            </p>
+            </div>
+            <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
+              <img src={bms_2} className="App-logo" alt="logo" style={{width:"100%"}} ></img>
+            </div>
+          </div>
+          <div className="row d-flex align-items-stretch no-gutters">
+            <div className="col-md-6 p-4 p-md-5 order-md-last bg-light" style={{textAlign:"center"}}>
+              <img src={bms_3} className="App-logo" alt="logo" style={{width:"100%"}} ></img>
+            </div>
+            <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
+              <p>Una vez presentadas las pruebas, el MEP entrega los resultados correspondientes,
+              aproximadamente un mes después de su aplicación y habilita un período de 3 días
+              hábiles para apelar dichos resultados mediante un trámite virtual que incluye el
+              llenado de una boleta llamada <strong>boleta de revocatoria</strong>, a la que el MEP responde al
+              cabo de aproximadamente 10 días hábiles y su sentencia es definitiva.
+              </p>
+              
+              <p>En cada convocatoria, el estudiante puede presentar desde una hasta las
+              6 materias. Cuando el estudiante ha aprobado las 6 materias, debe hacer el
+              trámite (que incluye el pago del derecho de título) para poder obtener el
+              título de <strong>Bachiller en Educación Media</strong> dado por el MEP, el cual tiene la
+              misma validez que el que se entrega en los colegios y, por lo tanto, sirve
+              para presentarlo en cualquier trabajo en que se solicite como requisito y
+              adicionalmente para ingresar a la universidad.</p>
+
+            </div>
+          </div>
+          
+          <h2 style={{marginTop:"5%", textAlign:"center"}}>
+          Fechas de inscripción y aplicación de las pruebas de Bachillerato por Madurez 2022 </h2>
+          
+          <div style={{marginBottom:"5%"}}>
+            <h3> Primera convocatoria</h3>
+            <ul>
+              <li> <strong>Inscripción</strong>: 10 de enero al 14 de enero.</li>
+              <li> <strong>Publicación de las sedes para las pruebas</strong>: 08 de abril (visite la página web <a href="https://dgec.mep.go.cr" target={"_blank"}>dgec.mep.go.cr</a>).</li>
+              <li> <strong>Período de pruebas</strong>: 23, 24 y 30 de abril.</li>
+              <li> <strong>Entrega de resultados</strong>: La fecha se informará el 8 de abril.</li>
+              <li> <strong>Período para presentar los recursos de revocatoria</strong>: La fecha se informará el 8 de abril.</li>
+              <li> <strong>Entrega de la resolución de los recursos de revocatoria</strong>: La fecha se informará el 8 de abril.</li>
+            </ul>
+            <h3> Calendario de pruebas</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Fecha</th>
+                  <th>Hora</th>
+                  <th>Asignatura</th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td rowspan="2">Sábado 23 de abril del 2022</td>
+                <td>De 8:30 a. m. a 11:30 a. m.</td>
+                <td>Idioma (Inglés o Francés)</td>
+              </tr>
+              <tr>
+                <td>De 1:00 p. m. a 5:00 p. m</td>
+                <td>Español</td>
+              </tr>
+              <tr>
+                <td rowspan="2">Domingo 24 de abril del 2022</td>
+                <td>De 8:30 a. m. a 11:30 a. m.</td>
+                <td>Matemática</td>
+              </tr>
+              <tr>
+                <td>De 1:00 p. m. a 5:00 p. m</td>
+                <td>Educación Cívica</td>
+              </tr>
+              <tr>
+                <td rowspan="2">Sábado 30 de abril del 2022</td>
+                <td>De 8:30 a. m. a 11:30 a. m.</td>
+                <td>Biología, Física o Química</td>
+              </tr>
+              <tr>
+                <td>De 1:00 p. m. a 5:00 p. m</td>
+                <td>Estudios Sociales</td>
+              </tr>
+              </tbody>
+            </table>
+            <br></br>
+            <h3> Segunda convocatoria</h3>
+            <ul>
+              <li> <strong>Inscripción</strong>: Del 06 al 10 de junio.</li>
+              <li> <strong>Publicación de las sedes para las pruebas</strong>: 08 de abril.</li>
+              <li> <strong>Período de pruebas</strong>: 11, 17 y 18 de setiembre.</li>
+              <li> <strong>Entrega de resultados</strong>:La fecha se informará el 02 de setiembre.</li>
+              <li> <strong>Período para presentar los recursos de revocatoria</strong>: La fecha se informará el 02 de setiembre.</li>
+              <li> <strong>Entrega de la resolución de los recursos de revocatoria</strong>: La fecha se informará el 02 de setiembre.</li>
+            </ul>
+            <h3> Calendario de pruebas</h3>
+            <p>Se dará a conocer el 6 de junio.</p>
+
+          </div>
+
+          <div className="row d-flex align-items-stretch no-gutters">
+            <div className="col-md-6 p-4 p-md-5 order-md-last bg-light" style={{textAlign:"center"}}>
+              <img src={bms_4} className="App-logo" alt="logo" style={{width:"100%"}} ></img>
+            </div>
+            <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
+            <h3>Costo del derecho de examen, título y cuentas habilitadas para el pago:</h3>
+            <ul>
+              <li><strong>Costo del derecho de examen</strong>: ¢8000 colones.</li>
+              <li><strong>Costo del derecho de título</strong>: ¢6600 colones.</li>
+            </ul>
+            <p>El pago de los derechos anteriores puede realizarse de diferentes formas:</p>
+            <ul>
+              <li>En forma presencial en cualquier sucursal del BNCR o en un BN servicios en
+              la cuenta <strong>128600-4</strong> a nombre de Asociación Costarricense de Enseñanza Radiofónica.
+              </li>
+              <li>
+              Por transferencia electrónica en la cuenta <strong>IBAN CR730100010011286004</strong>,
+              cédula jurídica <strong>ICER 3-002-045772</strong> a nombre de <strong>Asociación Costarricense
+              de Enseñanza Radiofónica</strong>.
+              </li>
+              <li>
+              Por sinpe móvil al número <strong>89471010</strong>.
+              </li>
+            </ul>
+            <p>En el recibo deberá aparecer el nombre de la persona que presentará la prueba de Bachillerato por
+            Madurez y la convocatoria en la que está inscribiendo. <strong>Debe conservar el comprobante de pago</strong>, ya que la foto o la captura de
+            pantalla son requeridas para realizar el trámite, ya sea de inscripción de pruebas o de obtención del título.</p>
+            </div>
+          </div>
+          <div className="row d-flex align-items-stretch no-gutters">
+            <div className="col-md-6 p-4 p-md-5 order-md-last bg-light" style={{textAlign:"center"}}>
+              <h3>¿Quiénes pueden inscribirse en las pruebas de Bachillerato por Madurez?</h3>
+              <ol>
+                <li>Los postulantes del plan antiguo de Bachillerato por Madurez Suficiente,
+                que tengan aprobada o reconocida al menos una asignatura en cualquiera de las dos áreas: Ciencias o Letras.</li>
+                <li>Las personas que tengan 18 años o más y posean el Certificado de
+                Conclusión de Estudios de la Educación General Básica (9° año) aprobado.</li>
+                <li>Los postulantes rezagados del bachillerato del sistema formal.</li>
+                <li>Los postulantes que hayan presentado pruebas una o varias veces en el
+                programa Bachillerato por Madurez Suficiente y que se encuentren rezagados
+                en una o más asignaturas.</li>
+                <li>Las madres adolescentes (menores de 18 años) que demuestren esta condición y tengan el noveno año aprobado.</li>
+              </ol>
+            </div>
+            <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
+            <img src={bms_5} className="App-logo" alt="logo" style={{width:"100%"}} ></img>
+            </div>
+          </div>
+          <div className="row d-flex align-items-stretch no-gutters">
+            <div className="col-md-6 p-4 p-md-5 order-md-last bg-light" style={{textAlign:"center"}}>
+              <img src={bms_6} className="App-logo" alt="logo" style={{width:"100%"}} ></img>
+            </div>
+            <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
+            <h3>Requisitos para la inscripción del Bachillerato por Madurez</h3>
+            <h6> <strong>Postulantes que presentaron documentación a partir de la convocatoria
+            02-2002 del programa Bachillerato por Madurez Suficiente (con expediente):</strong></h6>
+            
+            <ul>
+              <li>Llenar el formulario en línea con los datos solicitados en el link: <a
+              href="https://portaldgec.mep.go.cr/yo_aplico/Login" target={"_blank"}>
+              https://portaldgec.mep.go.cr/yo_aplico/Login
+              </a></li>
+              <li> Adjuntar el documento de identificación (por ambos lados). </li>
+              <li> Adjuntar el recibo del banco (debe aparecer el nombre del postulante y el
+              número de convocatoria en la cual se está inscribiendo).</li>
+            </ul>
+
+            <h6> <strong>Postulantes nuevos y aquellos matriculados en las convocatorias anteriores a
+            la 02-2002 del programa Bachillerato por Madurez Suficiente (sin expediente):</strong></h6>
+
+            <ul>
+            <li>Llenar el formulario en línea con los datos solicitados en el link: <a
+              href="https://portaldgec.mep.go.cr/yo_aplico/Login" target={"_blank"}>
+              https://portaldgec.mep.go.cr/yo_aplico/Login
+            </a></li>
+            <li> Adjuntar fotografía reciente, tamaño pasaporte, de frente (no se aceptan fotos con sellos). </li>
+            <li> Adjuntar el documento de identificación (por ambos lados). </li>
+            <li> Adjuntar el recibo del banco (debe aparecer el nombre del postulante y
+            el número de convocatoria en la cual se está inscribiendo). </li>
+            <li> Adjuntar el siguiente documento, de acuerdo con su situación:
+              <ul>
+                <li> Postulantes del plan antiguo: colilla de resultados de materias aprobadas. </li>
+                <li> Mayores de edad: Certificado de Conclusión de Estudios de la Educación General Básica (9°año).</li>
+                <li> Postulantes rezagados de las pruebas de bachillerato del sistema formal
+                menores de edad: Adjuntar la certificación del centro educativo donde
+                conste su condición de egresado en la asignatura que inscribe.
+                </li>
+                <li>Postulantes con estudios en el extranjero: Documento que convalida los
+                estudios realizados en el extranjero, que deberá corresponder al nivel
+                académico de III Ciclo de la Educación General Básica (noveno año) en Costa Rica.
+                </li>
+              </ul>
+            </li>
+            </ul>
+
+            </div>
+          </div>
+          <div className="row d-flex align-items-stretch no-gutters">
+            <div className="col-md-6 p-4 p-md-5 order-md-last bg-light" style={{textAlign:"center"}}>
+              <h3>Apoyos educativos: de acceso y curriculares no significativos</h3>
+              
+              <p>Las personas <strong>deben optar por el servicio educativo que mejor favorezca su condición</strong> y
+              en algunos casos los programas de educación abierta no son la mejor alternativa para
+              la población con dificultades específicas en el aprendizaje o para las personas con
+              discapacidad, pues es en el sistema formal en el que se le pueden brindar más apoyos
+              para solventar sus necesidades.</p>
+              
+              <p>No obstante, a los postulantes que se inscriben para realizar pruebas en los
+              programas de educación abierta, <strong>se les aplican apoyos educativos</strong> que no impliquen
+              la eliminación (adecuación curricular significativa) de contenidos y objetivos
+              medibles de los programas de estudio de la educación formal.</p>
+
+              <p>Los postulantes que requieran apoyos educativos (de acceso y curriculares
+              no significativos) durante la aplicación de las pruebas, deberán tramitarlas
+              con anticipación en la <strong>Asesoría de Educación Especial</strong> de la dirección regional
+              de educación respectiva y aportar, en el proceso de matrícula, la autorización
+              emitida.</p>
+
+              <p>Los postulantes de educación formal a quienes se les aplicaron las pruebas
+              nacionales, del año 2004 en adelante, con apoyos educativos (de acceso y
+              curriculares no significativos) solamente deberán marcar en el espacio
+              correspondiente a los apoyos educativos.</p>
+
+              <p>A aquellos que se les aplicaron los apoyos educativos (de acceso y
+              curriculares no significativos) entre los años 1998 y 2003 (Bachillerato o
+              noveno), deberán aportar en la matrícula la hoja de registro firmada por
+              el equipo del circuito respectivo.</p>
+
+              <p>Los postulantes que han presentado pruebas en los programas de educación
+              abierta y se les otorgó en este algún apoyo educativo (de acceso y curriculares
+              no significativos), solamente deben indicarlo en el espacio correspondiente.</p>
+
+            
+            </div>
+            <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
+              <img src={bms_7} className="App-logo" alt="logo" style={{width:"100%"}} ></img>
+            </div>
+          </div>
+
+          <p style={{textAlign:"center"}}> <strong>Si necesita más información sobre el Bachillerato por Madurez,
+          puede <a href={`${base_url}/contacto`}>contactarnos</a> y con gusto le ayudaremos.</strong></p>
+
+          <div style={{margin:"auto", textAlign:"center", marginTop:"5%", marginBottom:"5%"}}>
+
+              <div className="row d-flex align-items-stretch no-gutters">
+
+              <div className="col-md-4 p-4 p-md-5 order-md-last bg-light">
+              <p>Descargar Boleta recurso de revocatoria, composición y ortografía 2022</p>
+                <a
+                    href={boleta1}
+                    download="Boleta recurso de revocatoria, composición y ortografía 2022"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="btn btn-primary py-3 px-5">Descargar</button>
+                  </a>
+              </div>
+
+              <div className="col-md-4 p-4 p-md-5 order-md-last bg-light">
+              <p>Descargar Boleta de Recurso de Revocatoria Items Bachillerato por Madurez 2022</p>
+                <a
+                    href={boleta2}
+                    download="Boleta de Recurso de Revocatoria Items Bachillerato por Madurez 2022"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="btn btn-primary py-3 px-5">Descargar</button>
+                  </a>
+              </div>
+
+
+              <div className="col-md-4 p-4 p-md-5 order-md-last bg-light">
+              <p>Descargar Formulario de Solicitud de Título de Bachiller en Educación Media</p>
+                <a
+                    href={boleta3}
+                    download="Formulario de Solicitud de Título de Bachiller en Educación Media"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="btn btn-primary py-3 px-5">Descargar</button>
+                  </a>
+              </div>
+
+                
+
+                
+
+                
+
+              </div>
+
+          
+
+          </div>
+
         </div>
         </section>
     </Layout>

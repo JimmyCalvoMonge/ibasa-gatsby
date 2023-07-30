@@ -198,5 +198,5 @@ const AboutPage = () => {
 export default AboutPage
 
 export const Head = () => (
-  <SEO title="Sobre Nosotros" />
+  <SEO title="IBASA | Sobre Nosotros" />
 )

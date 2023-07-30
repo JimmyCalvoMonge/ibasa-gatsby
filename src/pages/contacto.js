@@ -114,7 +114,7 @@ const Contacto = () => {
 export default Contacto;
 
 export const Head = () => (
-    <SEO title="Contacto">
+    <SEO title="IBASA | Contacto">
         <script type="application/ld+json">
             {`
                 {

@@ -1,10 +1,16 @@
 import * as React from "react"
+import { Helmet } from 'react-helmet';
 import Layout from "../../components/layout"
 import '../../pages_styles/Courses/Courses.scss';
+var base_url = process.env.REACT_APP_ROOT_URL;
+
 
 const DiagMate = () => {
   return (
     <Layout>
+        <Helmet>
+          <title>IBASA | Diagnóstico de matemática del TEC </title>
+        </Helmet>
         <section className="hero-wrap hero-wrap-2 diagnostico_mate_tec_start_image">
         <div className="overlay"></div>
         <div className="container">
@@ -16,6 +22,7 @@ const DiagMate = () => {
             </div>
         </div>
         </section>
+        <p style={{marginTop:"5%", textAlign:"center"}}> Ir a <a href={`${base_url}/cursos/nivelacion-matematicas`}> Curso de Nivelación de Matemáticas </a></p>
     </Layout>
   );
 }

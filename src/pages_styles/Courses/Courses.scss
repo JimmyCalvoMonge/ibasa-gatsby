@@ -123,3 +123,32 @@
         margin-bottom: 10%;
     }
 }
+
+
+table {
+    width: 100%;
+    margin: auto;
+    text-align:center;
+    border: 2px solid;
+  }
+
+thead {
+	background-color: #c83939;
+	color: white;
+	font-size: 0.875rem;
+	text-transform: uppercase;
+	letter-spacing: 2%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding:1%;
+}
+
+tbody tr:nth-child(odd) {
+background-color: #fff;
+}
+
+tbody tr:nth-child(even) {
+background-color: #eee;
+}

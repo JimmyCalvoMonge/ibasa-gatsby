@@ -1,10 +1,15 @@
 import * as React from "react"
+import { Helmet } from 'react-helmet';
 import Layout from "../../components/layout"
 import '../../pages_styles/Courses/Courses.scss';
+var base_url = process.env.REACT_APP_ROOT_URL;
 
 const Dima = () => {
   return (
     <Layout>
+        <Helmet>
+          <title>IBASA | Curso DiMA </title>
+        </Helmet>
         <section className="hero-wrap hero-wrap-2 dima_start_image">
         <div className="overlay"></div>
         <div className="container">
@@ -16,6 +21,7 @@ const Dima = () => {
             </div>
         </div>
         </section>
+        <p style={{marginTop:"5%", textAlign:"center"}}> Ir a <a href={`${base_url}/cursos/nivelacion-matematicas`}> Curso de Nivelación de Matemáticas </a></p>
     </Layout>
   );
 }

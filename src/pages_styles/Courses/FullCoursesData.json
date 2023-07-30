@@ -78,7 +78,7 @@
     "seats":"50",
     "type":"virtual",
     "description":"Clases creadas para la prueba de Diagnóstico de Matemática del TEC, IBASA es el instituto ideal para reforzar contenidos de Matemática General y aprobar esta prueba.",
-    "url": "diagnostico-matematica-tec"
+    "url": "nivelacion-matematicas"
     },
     {
     "id": "course_10",
@@ -87,6 +87,6 @@
     "seats":"50",
     "type":"virtual",
     "description":"Las clases para el curso DiMA son con la finalidad de que los estudiantes aprueben el diagnóstico de matemática, asimismo que adquieran los conocimientos y destrezas matemáticos.",
-    "url": "dima"
+    "url": "nivelacion-matematicas"
     }
 ]

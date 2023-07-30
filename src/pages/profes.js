@@ -66,5 +66,5 @@ const Teachers = () => {
 export default Teachers;
 
 export const Head = () => (
-    <SEO title="Profesores Calificados" />
+    <SEO title="IBASA | Profesores Calificados" />
   )

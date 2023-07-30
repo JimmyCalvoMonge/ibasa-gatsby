@@ -1,10 +1,14 @@
 import * as React from "react"
+import { Helmet } from 'react-helmet';
 import Layout from "../../components/layout"
 import '../../pages_styles/Courses/Courses.scss';
 
 const ClasesGratuitas = () => {
   return (
     <Layout>
+        <Helmet>
+          <title>IBASA | Explorar Clases </title>
+        </Helmet>
         <section className="hero-wrap hero-wrap-2 clases_gratuitas_start_image">
         <div className="overlay"></div>
         <div className="container">

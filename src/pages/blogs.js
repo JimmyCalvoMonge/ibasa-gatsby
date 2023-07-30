@@ -58,5 +58,5 @@ const Blogs = () => {
 export default Blogs;
 
 export const Head = () => (
-    <SEO title="Informacion Importante" />
+    <SEO title="IBASA | Informacion Importante" />
   )

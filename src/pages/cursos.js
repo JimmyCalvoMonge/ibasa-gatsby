@@ -69,5 +69,5 @@ const Courses = () => {
 export default Courses;
 
 export const Head = () => (
-    <SEO title="Cursos" />
+    <SEO title="IBASA | Cursos" />
   )
