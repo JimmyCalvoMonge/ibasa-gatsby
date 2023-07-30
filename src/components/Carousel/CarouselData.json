@@ -9,18 +9,18 @@
     "id": "carousel_2",
     "title":"Exámenes de Admisión",
     "description":"En IBASA le garantizamos aprobar los exámenes de admisión mediante nuestros cursos intensivos y de alta calidad.",
-    "href": "nosotros"
+    "href": "cursos/admision-ucr-una"
     },
     {
     "id": "carousel_4",
     "title":"Cursos de Inglés",
     "description":"Nuestro curso de Inglés StartUp ofrece una opción innovadora, comprobada y completa para obtener un dominio del idioma Inglés.",
-    "href": "nosotros"
+    "href": "cursos/ingles-startup"
     },
     {
     "id": "carousel_3",
     "title":"Bachillerato",
     "description":"Ofrecemos preparación y acompañamiento para realizar los exámenes de Bachillerato por madurez y Educación Diversificada del MEP.",
-    "href": "nosotros"
+    "href": "cursos/bachillerato-madurez"
     }
 ]
