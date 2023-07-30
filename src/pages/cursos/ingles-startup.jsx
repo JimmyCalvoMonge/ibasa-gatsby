@@ -7,7 +7,7 @@ import ingstartup1 from "../../assets/images/gallery/Startup.png";
 import ingstartup2 from "../../assets/images/gallery/Ingles-Startup.jpg";
 import ingstartup3 from "../../assets/images/gallery/Curso-de-Ingles-Startup.jpg";
 import ingstartup4 from "../../assets/images/gallery/Curso-de-Ingles-Startup-1.jpg";
-import ingstartup5 from "../../assets/images/gallery/Clases-de-Ingles-Startup.jpg";
+import ingstartup5 from "../../assets/images/gallery/clases-de-Ingles-Startup.jpg";
 import ingstartup6 from "../../assets/images/gallery/Clases-de-Ingles-Startup-1.jpg";
 import ingstartup7 from "../../assets/images/gallery/MyEnglishLab.jpg";
 
