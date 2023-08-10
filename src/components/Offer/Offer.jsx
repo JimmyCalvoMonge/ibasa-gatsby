@@ -35,16 +35,16 @@ const Offer= () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-6">
+                {/* <div className="col-lg-6">
                   <div className="services-2 d-flex">
                     <div className="icon mt-2 d-flex justify-content-center align-items-center"><span className="flaticon-diploma"></span></div>
                     <div className="text pl-3">
                       <h3>Temario completo del examen de admisión</h3>
-                      <p>En Instituto IBASA le brindamos la información completa de los
-                      exámenes de admisión para las universidades y exámenes de bachillerato por madurez.</p>
+                      <p>En Instituto IBASA le brindamos información completa de los
+                      exámenes de admisión para las universidades públicas.</p>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div className="col-lg-6">
                   <div className="services-2 d-flex">
                     <div className="icon mt-2 d-flex justify-content-center align-items-center"><span className="flaticon-education"></span></div>
