@@ -64,20 +64,23 @@ const BachMadurez = () => {
           <div className="row d-flex align-items-stretch no-gutters">
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light" style={{textAlign:"center"}}>
             <form action="#">
-            <h4> ¡Contáctenos para saber más sobre este curso!</h4>
+              <h4> ¡Contáctenos para saber más sobre este curso!</h4>
+              <label class="required">Nombre Completo:</label>
               <div className="form-group">
-                  <input type="text" className="form-control" placeholder="Nombre Completo"></input>
+                  <input type="text" className="form-control" name="user_name" required></input>
               </div>
+              <label class="required">Correo electrónico:</label>
               <div className="form-group">
-                  <input type="text" className="form-control" placeholder="Email"></input>
+                  <input type="text" className="form-control" name="email" required></input>
               </div>
+              <label class="required">Mensaje:</label>
               <div className="form-group">
-                  <textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="Mensaje"></textarea>
+                  <textarea name="message" id="" cols="30" rows="7" className="form-control"></textarea>
               </div>
               <div className="form-group">
                   <input type="submit" value="Enviar Mensaje" className="btn btn-primary py-3 px-5"></input>
               </div>
-          </form>
+            </form>
             </div>
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
             
@@ -97,7 +100,7 @@ const BachMadurez = () => {
             se encuentran en las tablas de especificaciones para las pruebas de
             certificación de conocimientos del programa Bachillerato por Madurez
             Suficiente, las cuales pueden consultarse en el sitio web: <a href="https://dgec.mep.go.cr" target={"_blank"}>
-            https://dgec.mep.go.cr.</a></p>
+            www.dgec.mep.go.cr</a>.</p>
             
             <p>La preparación para aprobar los exámenes de Bachillerato por madurez se puede
             realizar de diferentes maneras:</p>
@@ -125,11 +128,11 @@ const BachMadurez = () => {
             un derecho por cada examen que deseen presentar. Además, deben <strong>completar
             los datos personales en un formulario virtual y enviar los documentos
             solicitados</strong>, todo esto a través de una aplicación creada por el MEP y
-            habilitada durante el período de inscripción para tal fin, llamada
-            <a href="https://portaldgec.mep.go.cr/yo_aplico/Login" target={"_blanck"}>Yo Aplico</a>.</p>
+            habilitada durante el período de inscripción para tal fin, llamada <a 
+            href="https://portaldgec.mep.go.cr/yo_aplico/Login" target={"_blank"}>Yo Aplico</a>.</p>
             
             <p>Asimismo, en el calendario se indican las fechas y además,
-            en la página <a href="www.dgec.mep.go.cr" target={"_blank"}>www.dgec.mep.go.cr</a>,
+            en la página <a href="https://.dgec.mep.go.cr" target={"_blank"}>www.dgec.mep.go.cr</a>,
             las sedes de aplicación de las pruebas, que generalmente corresponden a escuelas y
             colegios públicos de todo el territorio nacional.
             </p>
@@ -161,7 +164,7 @@ const BachMadurez = () => {
             </div>
           </div>
           
-          <h2 style={{marginTop:"5%", textAlign:"center"}}>
+          {/* <h2 style={{marginTop:"5%", textAlign:"center"}}>
           Fechas de inscripción y aplicación de las pruebas de Bachillerato por Madurez 2022 </h2>
           
           <div style={{marginBottom:"5%"}}>
@@ -226,7 +229,7 @@ const BachMadurez = () => {
             <h3> Calendario de pruebas</h3>
             <p>Se dará a conocer el 6 de junio.</p>
 
-          </div>
+          </div> */}
 
           <div className="row d-flex align-items-stretch no-gutters">
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light" style={{textAlign:"center"}}>

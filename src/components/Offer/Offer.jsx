@@ -50,7 +50,8 @@ const Offer= () => {
                     <div className="icon mt-2 d-flex justify-content-center align-items-center"><span className="flaticon-education"></span></div>
                     <div className="text pl-3">
                       <h3>Clases interactivas</h3>
-                      <p>Recursos dinámicos y efectivos para brindarte los mejores y eficaces métodos de aprendizaje con profesores expertos.</p>
+                      <p>Contamos con profesores expertos que utilizan recursos dinámicos y 
+                      efectivos para brindarte los mejores métodos para un aprendizaje eficaz. </p>
                     </div>
                   </div>
                 </div>

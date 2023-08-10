@@ -70,20 +70,23 @@ const TercerCiclo = () => {
           <div className="row d-flex align-items-stretch no-gutters">
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light" style={{textAlign:"center"}}>
             <form action="#">
-            <h4> ¡Contáctenos para saber más sobre este curso!</h4>
+              <h4> ¡Contáctenos para saber más sobre este curso!</h4>
+              <label class="required">Nombre Completo:</label>
               <div className="form-group">
-                  <input type="text" className="form-control" placeholder="Nombre Completo"></input>
+                  <input type="text" className="form-control" name="user_name" required></input>
               </div>
+              <label class="required">Correo electrónico:</label>
               <div className="form-group">
-                  <input type="text" className="form-control" placeholder="Email"></input>
+                  <input type="text" className="form-control" name="email" required></input>
               </div>
+              <label class="required">Mensaje:</label>
               <div className="form-group">
-                  <textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="Mensaje"></textarea>
+                  <textarea name="message" id="" cols="30" rows="7" className="form-control"></textarea>
               </div>
               <div className="form-group">
                   <input type="submit" value="Enviar Mensaje" className="btn btn-primary py-3 px-5"></input>
               </div>
-          </form>
+            </form>
             </div>
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
             
@@ -163,7 +166,7 @@ const TercerCiclo = () => {
               llamada <a href="https://portaldgec.mep.go.cr/yo_aplico/Login" target={"_blank"}>Yo Aplico</a>.</p>
               
               <p>Asimismo, en el calendario se indican las fechas de los exámenes de Tercer Ciclo y,
-              además, en la página <a href="https://dgec.mep.go.cr/" target={"_blank"}>https://dgec.mep.go.cr/</a>,
+              además, en la página <a href="https://dgec.mep.go.cr/" target={"_blank"}>dgec.mep.go.cr/</a>,
               las sedes de aplicación de las pruebas,
               que generalmente corresponden a escuelas y colegios públicos de todo el territorio nacional.
               </p>
@@ -190,7 +193,7 @@ const TercerCiclo = () => {
             </div>
           </div>
           
-          <h2 style={{marginTop:"5%", textAlign:"center"}}>
+          {/* <h2 style={{marginTop:"5%", textAlign:"center"}}>
           Fechas de inscripción y de aplicación de pruebas de Tercer Ciclo para el año 2022 </h2>
           
           <div style={{marginBottom:"5%"}}>
@@ -259,7 +262,7 @@ const TercerCiclo = () => {
             <h3> Calendario de pruebas</h3>
             <p>Se dará a conocer el 29 de julio.</p>
 
-          </div>
+          </div> */}
 
           <div className="row d-flex align-items-stretch no-gutters">
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light" style={{textAlign:"center"}}>

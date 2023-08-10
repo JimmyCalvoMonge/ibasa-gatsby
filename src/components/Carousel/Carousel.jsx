@@ -52,7 +52,7 @@ const Carousel= () => {
                 </div>
                 <div className="media-body p-2 mt-3">
                   <h3 className="heading">Profesores Certificados</h3>
-                  <p>Nuestros profesores cuentan con gran experiencia en educaci+on y preparación para exámenes de admisión y bachillerato.</p>
+                  <p>Nuestros profesores cuentan con gran experiencia en educación y preparación para exámenes de admisión y bachillerato.</p>
                 </div>
               </div>      
             </div>

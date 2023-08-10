@@ -10,30 +10,30 @@
     },
     {
     "id": "course_2",
-    "name":"Examen de Admisión TEC",
+    "name":"Curso de Inglés",
     "prof":"Jorge Gómez",
     "seats":"50",
     "type":"virtual",
-    "description":"En Instituto IBASA impartimos clases de apoyo para preparar a estudiantes para la prueba de admisión deL Instituto Tecnológico (TEC). Las clases abarcan los temas de razonamiento lógico matemático y verbal.",
-    "url": "admision-tec"
+    "description":"El programa de inglés que IBASA le ofrece tiene como fin principal que el estudiante desarrolle al máximo las habilidades de comprensión y expresión oral y de lectura y escritura de la lengua inglesa.",
+    "url": "ingles"
     },
     {
     "id": "course_3",
-    "name":"Curso de Inglés StartUp",
-    "prof":"Jorge Gómez",
-    "seats":"50",
-    "type":"virtual",
-    "description":"Startup es el nuevo curso de inglés general para adultos y jóvenes que quieren abrirse camino en el mundo y necesitan inglés para hacerlo. Este innovador curso multidisciplinar de ocho niveles es un programa de idiomas completo.",
-    "url": "ingles-startup"
-    },
-    {
-    "id": "course_4",
     "name":"Bachillerato por Madurez Suficiente",
     "prof":"Jorge Gómez",
     "seats":"50",
     "type":"virtual",
     "description":"Programa dirigido a personas mayores de edad que tienen la educación general básica aprobada y que por diversos motivos no pudieron concluir sus estudios en el sistema tradicional.",
     "url": "bachillerato-madurez"
+    },
+    {
+    "id": "course_4",
+    "name":"Tercer Ciclo",
+    "prof":"Jorge Gómez",
+    "seats":"50",
+    "type":"virtual",
+    "description":"Programa dirigido a personas que cuenta con I y II Ciclo (sexto grado) de la Educación General Básica, la edad mínima para ingresar a este programa es de 14 años. También llamado “Ujarrás”",
+    "url": "tercer-ciclo"
     },
     {
     "id": "course_5",
@@ -46,12 +46,12 @@
     },
     {
     "id": "course_6",
-    "name":"Tercer Ciclo",
+    "name":"Examen de Admisión TEC",
     "prof":"Jorge Gómez",
     "seats":"50",
     "type":"virtual",
-    "description":"Programa dirigido a personas que cuenta con I y II Ciclo (sexto grado) de la Educación General Básica, la edad mínima para ingresar a este programa es de 14 años. También llamado “Ujarrás”",
-    "url": "tercer-ciclo"
+    "description":"En Instituto IBASA impartimos clases de apoyo para preparar a estudiantes para la prueba de admisión deL Instituto Tecnológico (TEC). Las clases abarcan los temas de razonamiento lógico matemático y verbal.",
+    "url": "admision-tec"
     },
     {
     "id": "course_7",

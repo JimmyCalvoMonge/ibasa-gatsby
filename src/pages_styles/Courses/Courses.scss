@@ -51,15 +51,15 @@
 }
 
 .course_2{
-    background-image: url(../../assets/images/courses/TEC.jpg)
-}
-
-.course_3{
     background-image: url(../../assets/images/courses/Curso-de-Ingles-Startup.jpg)
 }
 
-.course_4{
+.course_3{
     background-image: url(../../assets/images/courses/Bachillerato-por-Madurez-Suficiente.jpg)
+}
+
+.course_4{
+    background-image: url(../../assets/images/courses/Tercer-Ciclo.jpg)
 }
 
 .course_5{
@@ -67,7 +67,7 @@
 }
 
 .course_6{
-    background-image: url(../../assets/images/courses/Tercer-Ciclo.jpg)
+    background-image: url(../../assets/images/courses/TEC.jpg)
 }
 
 .course_7{
@@ -152,3 +152,9 @@ background-color: #fff;
 tbody tr:nth-child(even) {
 background-color: #eee;
 }
+
+.required::after {
+    content: ' *';
+    color: red;
+    text-align: left;
+  }

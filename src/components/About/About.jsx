@@ -27,14 +27,16 @@ const About= () => {
             </div>
             <div className="col-md-6 heading-section heading-section-white ftco-animate pl-lg-5 pt-md-0 pt-5">
             <h2 className="mb-4">Instituto IBASA</h2>
-            <p>Fundado en Alajuela el 15 de abril de 1995. Cuatro años más tarde abrió su sede de San José.</p>
-            <p>Desde nuestra fundación nos hemos caracterizado por impartir lecciones 
-            de todas las materias en el área de Educación Formal y Abierta, 
-            labor que hemos desempeñado con mucho éxito, esto se ve reflejado 
-            en los altos porcentajes de rendimiento académico, lo cual nos ha 
-            permitido ocupar en innumerables ocasiones los primeros lugares en 
-            promoción a nivel nacional y también contar con una cantidad 
-            considerable de estudiantes. </p>
+            <p>Fundado en Alajuela el 15 de abril de 1995,
+            cuatro años más tarde abrió su sede en San José.
+            Desde su fundación IBASA se ha caracterizado por
+            impartir lecciones de todas las materias en el
+            área de educación formal y educación abierta, labor
+            que ha desempeñado con mucho éxito, esto se ve reflejado
+            en los altos porcentajes de rendimiento académico,
+            lo cual le ha permitido ocupar en innumerables ocasiones
+            los primeros lugares en promoción a nivel nacional y
+            también contar con una cantidad considerable de estudiantes.</p>
             </div>
           </div>	
           <div className="row d-md-flex align-items-center justify-content-center">

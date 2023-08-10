@@ -27,34 +27,37 @@ const ClasesGratuitas = () => {
           <div className="row d-flex align-items-stretch no-gutters">
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
               <form action="#">
-                              <div className="form-group">
-                                  <input type="text" className="form-control" placeholder="Nombre"></input>
-                              </div>
-                              <div className="form-group">
-                                  <input type="text" className="form-control" placeholder="Email"></input>
-                              </div>
-                              <div className="form-group">
-                                  <select name="" id="" className="form-control">
-                                      <option value="" style={{backgroundColor:"white"}}>Clase Gratuita a recibir ...</option>
-                                      <option value="" style={{backgroundColor:"white"}}>Examen de admisión UCR-UNA</option>
-                                      <option value="" style={{backgroundColor:"white"}}>Examen de admisión TEC</option>
-                                      <option value="" style={{backgroundColor:"white"}}>Inglés Startup</option>
-                                      <option value="" style={{backgroundColor:"white"}}>Bachillerato por Madurez</option>
-                                      <option value="" style={{backgroundColor:"white"}}>Educación Diversificada a Distancia (EDAD)</option>
-                                      <option value="" style={{backgroundColor:"white"}}>Tercer Ciclo</option>
-                                      <option value="" style={{backgroundColor:"white"}}>Curso DiMA</option>
-                                      <option value="" style={{backgroundColor:"white"}}>Prueba de Habilidades Cuantitativas</option>
-                                      <option value="" style={{backgroundColor:"white"}}>Nivelación Matemática</option>
-                                      <option value="" style={{backgroundColor:"white"}}>Prueba de Diagnóstico de Matemática del TEC</option>
-                                  </select>
-                              </div>
-                              <div className="form-group">
-                                  <textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="Mensaje"></textarea>
-                              </div>
-                              <div className="form-group">
-                                  <input type="submit" value="Enviar Mensaje" className="btn btn-primary py-3 px-5"></input>
-                              </div>
-                          </form>
+                    <label class="required">Nombre Completo:</label>
+                    <div className="form-group">
+                        <input type="text" className="form-control" name="user_name" required></input>
+                    </div>
+                    <label class="required">Correo electrónico:</label>
+                    <div className="form-group">
+                        <input type="text" className="form-control" name="email" required></input>
+                    </div>
+                    <div className="form-group">
+                        <select name="" id="" className="form-control">
+                            <option value="" style={{backgroundColor:"white"}}>Clase Gratuita a recibir ...</option>
+                            <option value="" style={{backgroundColor:"white"}}>Examen de admisión UCR-UNA</option>
+                            <option value="" style={{backgroundColor:"white"}}>Examen de admisión TEC</option>
+                            <option value="" style={{backgroundColor:"white"}}>Inglés Startup</option>
+                            <option value="" style={{backgroundColor:"white"}}>Bachillerato por Madurez</option>
+                            <option value="" style={{backgroundColor:"white"}}>Educación Diversificada a Distancia (EDAD)</option>
+                            <option value="" style={{backgroundColor:"white"}}>Tercer Ciclo</option>
+                            <option value="" style={{backgroundColor:"white"}}>Curso DiMA</option>
+                            <option value="" style={{backgroundColor:"white"}}>Prueba de Habilidades Cuantitativas</option>
+                            <option value="" style={{backgroundColor:"white"}}>Nivelación Matemática</option>
+                            <option value="" style={{backgroundColor:"white"}}>Prueba de Diagnóstico de Matemática del TEC</option>
+                        </select>
+                    </div>
+                    <label class="required">Mensaje:</label>
+                    <div className="form-group">
+                        <textarea name="message" id="" cols="30" rows="7" className="form-control"></textarea>
+                    </div>
+                    <div className="form-group">
+                        <input type="submit" value="Enviar Mensaje" className="btn btn-primary py-3 px-5"></input>
+                    </div>
+                </form>
                 </div>
                 <div className="col-md-6 p-4 p-md-5 order-md-last bg-light" style={{textAlign:"center"}}>
 

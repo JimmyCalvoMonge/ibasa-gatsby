@@ -51,20 +51,23 @@ const AdmisionUCRUNA = () => {
           <div className="row d-flex align-items-stretch no-gutters">
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light" style={{textAlign:"center"}}>
             <form action="#">
-            <h4> ¡Contáctenos para saber más sobre este curso!</h4>
+              <h4> ¡Contáctenos para saber más sobre este curso!</h4>
+              <label class="required">Nombre Completo:</label>
               <div className="form-group">
-                  <input type="text" className="form-control" placeholder="Nombre Completo"></input>
+                  <input type="text" className="form-control" name="user_name" required></input>
               </div>
+              <label class="required">Correo electrónico:</label>
               <div className="form-group">
-                  <input type="text" className="form-control" placeholder="Email"></input>
+                  <input type="text" className="form-control" name="email" required></input>
               </div>
+              <label class="required">Mensaje:</label>
               <div className="form-group">
-                  <textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="Mensaje"></textarea>
+                  <textarea name="message" id="" cols="30" rows="7" className="form-control"></textarea>
               </div>
               <div className="form-group">
                   <input type="submit" value="Enviar Mensaje" className="btn btn-primary py-3 px-5"></input>
               </div>
-          </form>
+            </form>
             </div>
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
               <h3>¿Qué contenidos evalúa la P.A.A. UCR?</h3>

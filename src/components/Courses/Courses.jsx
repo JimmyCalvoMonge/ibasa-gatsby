@@ -29,7 +29,7 @@ const Courses= () => {
                 </p>
                 
                 <div className='course_name'>
-                  <h3><a href={`/cursos/${course.url}`}>{course.name}</a></h3>
+                  <h3><a href={`${base_url}/cursos/${course.url}`}>{course.name}</a></h3>
                 </div>
                 
                 <div className='course_description'>

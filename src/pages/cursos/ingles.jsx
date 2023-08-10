@@ -4,12 +4,12 @@ import Layout from "../../components/layout"
 import '../../pages_styles/Courses/Courses.scss';
 
 import ingstartup1 from "../../assets/images/gallery/Startup.png";
-import ingstartup2 from "../../assets/images/gallery/Ingles-Startup.jpg";
+// import ingstartup2 from "../../assets/images/gallery/Ingles-Startup.jpg";
 import ingstartup3 from "../../assets/images/gallery/Curso-de-Ingles-Startup.jpg";
 import ingstartup4 from "../../assets/images/gallery/Curso-de-Ingles-Startup-1.jpg";
-import ingstartup5 from "../../assets/images/gallery/clases-de-Ingles-Startup.jpg";
+// import ingstartup5 from "../../assets/images/gallery/clases-de-Ingles-Startup.jpg";
 import ingstartup6 from "../../assets/images/gallery/Clases-de-Ingles-Startup-1.jpg";
-import ingstartup7 from "../../assets/images/gallery/MyEnglishLab.jpg";
+// import ingstartup7 from "../../assets/images/gallery/MyEnglishLab.jpg";
 
 var base_url = process.env.REACT_APP_ROOT_URL;
 
@@ -24,7 +24,7 @@ const Ingles = () => {
         <div className="container">
             <div className="row no-gutters slider-text align-items-center justify-content-center">
             <div className="col-md-9 ftco-animate text-center">
-                <h1 className="mb-2 bread">Curso de Inglés StartUp</h1>
+                <h1 className="mb-2 bread">Curso de Inglés</h1>
                 <p className="breadcrumbs"><span className="mr-2"><a href="/">Inicio<i className="ion-ios-arrow-forward"></i></a></span> <span>Cursos <i className="ion-ios-arrow-forward"></i></span></p>
             </div>
             </div>
@@ -37,29 +37,23 @@ const Ingles = () => {
           <div className="row d-flex align-items-stretch no-gutters">
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light" style={{textAlign:"center"}}>
 
-            <p>Startup es el nuevo <strong>curso de inglés general para adultos y jóvenes</strong> que
-            quieren abrirse camino en el mundo y necesitan inglés para hacerlo.</p>
-
-            <p>Este innovador curso multidisciplinar de ocho niveles es un programa de
-            idiomas completo. Motiva a los estudiantes del siglo XXI con contenido relevante,
-            rico en medios y brinda a los maestros un apoyo sólido para que la enseñanza sea
-            personalizable y fácil.
+            <p>El programa de inglés que IBASA le ofrece tiene como fin principal que el estudiante desarrolle al máximo
+            las habilidades de comprensión y expresión oral y de lectura y escritura de la lengua inglesa.
+            Nuestro objetivo es que el estudiante, al finalizar el programa, obtenga el nivel <strong>B2</strong> del 
+            Marco Común Europeo de Referencia para las lenguas.
             </p>
 
             <p>
-            Las clases de inglés Startup es un curso combinado flexible que
-            incluye la aplicación <strong>Pearson Practice English</strong> que lleva a los
-            alumnos de la página al aprendizaje móvil en cualquier lugar y
-            en cualquier momento. Trae el mundo al aula y lleva el aula al
-            mundo, poniendo a los alumnos en el centro.
+            El Marco Común Europeo de Referencia para las lenguas es una calificación internacional
+            que define los conocimientos de la lengua inglesa. Se utiliza en la mayor parte del mundo
+            para definir las destrezas lingüisticas de los estudiantes en una escala de niveles de inglés
+            desde <strong>A1</strong> (nivel inglés básico), hasta <strong>C2</strong> (para aquellos que dominan 
+            el inglés de manera excepcional, casi nativos).
             </p>
 
-            <p>
-            Permita que los estudiantes completen actividades y accedan a los medios
-            dondequiera que estén con un Student’s Book interactivo.
-            Cree las pruebas que desee para su clase a partir del paquete
-            de evaluación disponible con su curso.
-            </p>
+            <p> Tener un nivel <strong>B2</strong> es manejar un nivel de inglés intermedio-alto, lo que significa tener 
+            la fluidez adecuada para hablar y escuchar en inglés, es decir comunicarse sin mayor esfuerzo, sin dejar
+            de lado una correcta escritura y lectura.</p>
 
             </div>
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
@@ -69,23 +63,26 @@ const Ingles = () => {
           <div className="row d-flex align-items-stretch no-gutters">
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light" style={{textAlign:"center"}}>
             <form action="#">
-            <h4> ¡Contáctenos para saber más sobre este curso!</h4>
+              <h4> ¡Contáctenos para saber más sobre este curso!</h4>
+              <label class="required">Nombre Completo:</label>
               <div className="form-group">
-                  <input type="text" className="form-control" placeholder="Nombre Completo"></input>
+                  <input type="text" className="form-control" name="user_name" required></input>
               </div>
+              <label class="required">Correo electrónico:</label>
               <div className="form-group">
-                  <input type="text" className="form-control" placeholder="Email"></input>
+                  <input type="text" className="form-control" name="email" required></input>
               </div>
+              <label class="required">Mensaje:</label>
               <div className="form-group">
-                  <textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="Mensaje"></textarea>
+                  <textarea name="message" id="" cols="30" rows="7" className="form-control"></textarea>
               </div>
               <div className="form-group">
                   <input type="submit" value="Enviar Mensaje" className="btn btn-primary py-3 px-5"></input>
               </div>
-          </form>
+            </form>
             </div>
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
-              <img src={ingstartup2} className="App-logo" alt="logo" style={{width:"100%"}} ></img>
+              <img src={ingstartup6} className="App-logo" alt="logo" style={{width:"100%"}} ></img>
             </div>
           </div>
 
@@ -97,13 +94,6 @@ const Ingles = () => {
             herramientas digitales modernas para ayudarlo a ofrecer mejores experiencias
             de aprendizaje, pero también administrar su salón de clases para ahorrar
             tiempo y esfuerzo.</p>
-            <p>
-            El curso de inglés Startup que <a href={`${base_url}`}>IBASA</a> ha comprado 
-            a Pearson es para utilizarse vía internet 
-            por medio de dispositivos móviles como teléfonos o 
-            tabletas y también en computadoras de escritorio o 
-            portátiles.
-            </p>
             <section className="ftco-services ftco-no-pb">
               <div className="container-wrap">
                 <div className="row no-gutters">
@@ -134,7 +124,7 @@ const Ingles = () => {
                       <i class="material-icons" style={{color:"white", fontSize:"48px"}}>phonelink</i>
                       </div>
                       <div className="media-body p-2 mt-3">
-                        <h3 className="heading">Programa de videos de StartUp</h3>
+                        <h3 className="heading">Material virtual didáctico</h3>
                       </div>
                     </div>      
                   </div>
@@ -144,23 +134,13 @@ const Ingles = () => {
           </div>
           <hr></hr>
 
-
-          <h2 style={{marginTop:"5%"}}> IBASA: El curso de inglés tiene tres productos principales:</h2>
           <div className="row d-flex align-items-stretch no-gutters">
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
-            <h3>eText</h3>
-            <ul>
-              <li>El libro es digital.</li>
-              <li>Se accede por medio de un portal con su usuario y clave.</li>
-              <li>Es como ver un libro de papel, pero en cada página se pueden
-              escuchar los audios y ver los videos de forma instantánea.</li>
-              <li>Cuando hay ejercicios, el estudiante lo completa dentro de la
-              aplicación y el sistema lo revisa de inmediato y lo corrige si necesitará corrección.
-              <li>Esto significa que el estudiante siempre va a ahorrar
-              tiempo en sus estudios porque no necesita esperar a que
-              el profesor le entregue la revisión hasta la siguiente clase.</li>
-              Todo sucede en tiempo real.</li>
-            </ul>
+            <h3>Estructura del programa</h3>
+            <p>El programa está dividido en cuatro niveles y éstos a su vez en dos módulos cada uno, para un total de ocho módulos.
+            Cada módulo consta de ocho unidades y se imparte en un periodo de diez semanas. Después de finalizado cada módulo,
+            el estudiante tendrá un receso de una semana para descansar, excepto a fin de año, en el cual se 
+            programó un receso de un mes (el cual por supuesto no se cobra).</p>
             </div>
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
               <img src={ingstartup3} className="App-logo" alt="logo" style={{width:"100%"}} ></img>
@@ -171,40 +151,35 @@ const Ingles = () => {
             <img src={ingstartup4} className="App-logo" alt="logo" style={{width:"100%"}} ></img>
             </div>
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
-            <h3>App</h3>
-            <ul>
-              <li>El estudiante tiene derecho al matricularse, de tener
-              un código que le permitirá descargar en su teléfono la aplicación de
-              práctica, tanto de lectura, escritura, escucha y habla, para que en
-              todo momento donde vaya no pierda el tiempo en aprender cada más y
-              mejor inglés.</li>
-              <li>Todo lo que haga en la app o en el eText
-              queda grabado en el portal. <strong>Así que nunca perderá
-              sus datos ante un robo de su dispositivo</strong>.</li>
-            </ul>
-            </div>
-          </div>
-          <div className="row d-flex align-items-stretch no-gutters">
-            <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
-            <h3>MyEnglishLab</h3>
-            <ul>
-              <li>Es un portal tecnológico de inteligencia artificial que es un laboratorio de idioma
-              donde <strong>el estudiante interactúa su producción escrita, lectura, escucha y habla y el
-              sistema le revisa.</strong></li>
-              <li> Muchos estudiantes temen participar en clase por temor
-              a los errores, pero en MyEnglishLab todo queda entre el
-              estudiante y la inteligencia artificial. </li>
-              <li>El profesor puede ver el progreso del estudiante
-              desde la plataforma del profesor y así dar siempre
-              acompañamiento.</li>
-            </ul>
-            </div>
-            <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
-              <img src={ingstartup5} className="App-logo" alt="logo" style={{width:"100%"}} ></img>
+            <h3>Metodología del programa</h3>
+
+            <p>
+              Las lecciones son sincrónicas (o sea en vivo) e impartidas por medio de la aplicación ZOOM.
+              Cada estudiante tendrá un texto en PDF con el material que se estudiará durante el desarrollo de 
+              dos módulos, el profesor a cargo del grupo explicará la materia y aclarará todas las dudas que surjan.
+              Mediante el texto y el uso de aplicaciones gratuitas y de enlaces que conducen a métodos interactivos,
+              se incentivará la interacción entre todos los alumnos, favoreciendo que la clase sea fluida y amena.
+            </p>
+
+            <p>
+              El estudiante contará con otro texto en PDF llamado el Workbook, y el profesor asignará prácticas de 
+              tarea de dicho texto,las cuales el estudiante deberá realizar para optimizar su aprendizaje. Las tareas
+              no tienen ningún valor porcentual para efectos de aprobar el nivel respectivo.
+            </p>
+
+            <p>
+              Igualmente, el docente podrá aplicar exámenes cortos (quizzes) cuando lo considere conveniente y éstos
+              quizzes tampoco tendrán valor porcentual para aprobar el nivel, sólo tendrán carácter correctivo.
+            </p>
+
+            <p>
+              Adicionalmente, el educador podrá solicitar trabajos de investigación y de cualquier otro tipo y éstos trabajos
+              tendrán carácter grupal y no tendrán ningún valor porcentual sumativo en la nota final.
+            </p>
             </div>
           </div>
 
-          <h2 style={{marginTop:"5%"}}> Inglés para estudiantes del siglo XXI: </h2>
+          {/* <h2 style={{marginTop:"5%"}}> Inglés para estudiantes del siglo XXI: </h2>
 
 
           <p>Este curso o clases de inglés es ideal para personas que quieren aprender
@@ -285,30 +260,9 @@ const Ingles = () => {
             </ul>
 
             </div>
-          </div>
+          </div> */}
 
-
-          <hr></hr>
-          <div>
-            <h2 style={{marginTop:"5%", textAlign:"center"}}> Datos importantes del curso de inglés Startup </h2>
-            <ol>
-              <li>En inglés hay cinco vocales (a-e-i-o-u) pero para estas cinco vocales existen
-              18 sonidos diferentes. Equivocar el sonido conlleva no solo a que no se puedan
-              comunicar correctamente, sino a que se puedan cometer errores muy ofensivos. </li>
-              <li> Por eso, junto con el paquete de que incluye las clases de inglés Startup,
-              se incluirá esta metodología <strong>para que el estudiante tenga confianza y no tenga
-              miedo de pronunciar palabras</strong> que a los oídos de los latinos suenan iguales,
-              pero no lo son.
-              </li>
-              <li>
-              Solo 20 profesores en Costa Rica a la fecha han sido capacitados
-              en este método. Todo esto se incluye en el mismo precio del curso
-              de inglés Startup.
-              </li>
-            </ol>
-          </div>
-
-          <p style={{textAlign:"center"}}> <strong>Si necesita más información sobre el curso de Inglés StartUp,
+          <p style={{textAlign:"center"}}> <strong>Si necesita más información sobre el curso de Inglés de IBASA,
           puede <a href={`${base_url}/contacto`}>contactarnos</a> y con gusto le ayudaremos.</strong></p>
         </div>
         </section>
