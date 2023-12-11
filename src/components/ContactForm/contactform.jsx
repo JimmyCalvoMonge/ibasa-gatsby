@@ -1,5 +1,6 @@
 import * as React from "react"
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 
 // Contact Form with Fixed Course Name
 
@@ -27,14 +28,23 @@ const ContactForm = (props) => {
 
     const [sent, setSent] = useState(false);
 
-    const handleClick = () => {
+    useEffect(() => emailjs.init(process.env.REACT_EMAIL_JS_PUBLIC_KEY), []);
+    const handleSubmit = async (e) => {
 
-        console.log(name);
-        console.log(email);
-        console.log(props.course);
-        console.log(message);
+        e.preventDefault();
 
-        // Add send email logic here !
+        const serviceId = process.env.REACT_EMAIL_JS_SERVICE_ID;
+        const templateId = process.env.REACT_EMAIL_JS_TEMPLATE_ID;
+
+        try {
+            await emailjs.send(serviceId, templateId, {
+            name: name,
+            email: email,
+            course: props.course,
+            message: message,
+            phone: telephone
+        });
+        console.log('Correo enviado con éxito!');
 
         setName('');
         setEmail('');
@@ -45,6 +55,13 @@ const ContactForm = (props) => {
         setTimeout(() => {
             setSent(false)
          }, 10000);
+
+        } catch (error) {
+            console.log("Error!")
+            console.log(error);
+        } finally {
+            console.log('Finalizado!')
+        }
     };
 
     return (
@@ -72,7 +89,7 @@ const ContactForm = (props) => {
         </div>
         <div className="form-group">
             <input type="submit" value="Enviar Mensaje" className="btn btn-primary py-3 px-5"
-            onClick={() => handleClick()}></input>
+            onClick={(e) => handleSubmit(e)}></input>
         </div>
         {sent ? 
         <h4> Su mensaje se ha enviado a IBASA con éxito.

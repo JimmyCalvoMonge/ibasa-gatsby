@@ -3,7 +3,7 @@
  */
 
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
+  path: `.env`,
 })
 
 const siteUrl = process.env.REACT_APP_ROOT_URL || `https://ibasa-gatsby.vercel.app`

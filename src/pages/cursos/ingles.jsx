@@ -104,7 +104,7 @@ const Ingles = () => {
                   <div className="col-md-4 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary">
                     <div className="media block-6 d-block text-center">
                       <div className="icon d-flex justify-content-center align-items-center">
-                      <i class="material-icons" style={{color:"white", fontSize:"48px"}}>phonelink</i>
+                      <i className="material-icons" style={{color:"white", fontSize:"48px"}}>phonelink</i>
                       </div>
                       <div className="media-body p-2 mt-3">
                         <h3 className="heading">Material virtual didáctico</h3>

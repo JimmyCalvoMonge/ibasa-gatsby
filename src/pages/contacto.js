@@ -1,6 +1,8 @@
 import * as React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {isMobile} from 'react-device-detect';
+import emailjs from "@emailjs/browser";
+
 import { SEO } from "../components/seo";
 import '../pages_styles/Contact/Contact.scss';
 import Layout from "../components/layout";
@@ -36,14 +38,23 @@ const Contacto = () => {
 
     const [sent, setSent] = useState(false);
 
-    const handleClick = () => {
+    useEffect(() => emailjs.init(process.env.REACT_EMAIL_JS_PUBLIC_KEY), []);
+    const handleSubmit = async (e) => {
 
-        console.log(name);
-        console.log(email);
-        console.log(course);
-        console.log(message);
+        e.preventDefault();
 
-        // Add send email logic here !
+        const serviceId = process.env.REACT_EMAIL_JS_SERVICE_ID;
+        const templateId = process.env.REACT_EMAIL_JS_TEMPLATE_ID;
+
+        try {
+            await emailjs.send(serviceId, templateId, {
+            name: name,
+            email: email,
+            course: course,
+            message: message,
+            phone: 'No especificado'
+        });
+        console.log('Correo enviado con éxito!');
 
         setName('');
         setEmail('');
@@ -54,6 +65,13 @@ const Contacto = () => {
         setTimeout(() => {
             setSent(false)
          }, 10000);
+
+        } catch (error) {
+            console.log("Error!")
+            console.log(error);
+        } finally {
+            console.log('Finalizado!')
+        }
     };
 
     return (
@@ -140,7 +158,7 @@ const Contacto = () => {
                                 </div>
                                 <div className="form-group">
                                     <input type="submit" value="Enviar Mensaje!"
-                                    className="btn btn-primary py-3 px-5" onClick={() => handleClick()}></input>
+                                    className="btn btn-primary py-3 px-5" onClick={(e) => handleSubmit(e)}></input>
                                 </div>
                                 <div>
                                 {sent ? 

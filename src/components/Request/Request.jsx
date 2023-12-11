@@ -1,5 +1,6 @@
 import * as React from "react"
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 import './Request.scss';
 
 const Request= () => {
@@ -31,25 +32,40 @@ const Request= () => {
 
     const [sent, setSent] = useState(false);
 
-    const handleClick = () => {
+    useEffect(() => emailjs.init(process.env.REACT_EMAIL_JS_PUBLIC_KEY), []);
+    const handleSubmit = async (e) => {
 
-        console.log(name);
-        console.log(email);
-        console.log(course);
-        console.log(message);
+        e.preventDefault();
 
-        // Add send email logic here !
+        const serviceId = process.env.REACT_EMAIL_JS_SERVICE_ID;
+        const templateId = process.env.REACT_EMAIL_JS_TEMPLATE_ID;
+
+        try {
+            await emailjs.send(serviceId, templateId, {
+            name: name,
+            email: email,
+            course: course,
+            message: message,
+            phone: telephone
+        });
+        console.log('Correo enviado con éxito!');
 
         setName('');
         setEmail('');
         setCourse('Seleccione un Curso ...');
         setMessage('');
-        setTelephone('');
         
         setSent(true);
         setTimeout(() => {
             setSent(false)
          }, 10000);
+
+        } catch (error) {
+            console.log("Error!")
+            console.log(error);
+        } finally {
+            console.log('Finalizado!')
+        }
     };
 
 
@@ -113,7 +129,7 @@ const Request= () => {
                   </div>
                   <div className="form-group">
                     <input type="submit" value="Solicitar Información" className="btn btn-primary py-3 px-4"
-                    onClick={() => handleClick()}></input>
+                    onClick={(e) => handleSubmit(e)}></input>
                   </div>
                   <div>
                   {sent ? 

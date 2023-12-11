@@ -16,6 +16,7 @@
   },
   "license": "0BSD",
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "bcryptjs": "^2.4.3",
     "crypto": "^1.0.1",
     "crypto-browserify": "^3.12.0",
