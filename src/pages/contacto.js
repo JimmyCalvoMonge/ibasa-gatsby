@@ -65,6 +65,7 @@ const Contacto = () => {
         setEmail('');
         setCourse('Seleccione un Curso ...');
         setMessage('');
+        setTelephone('');
         
         setSent(true);
         setTimeout(() => {

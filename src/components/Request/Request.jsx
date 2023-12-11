@@ -54,6 +54,7 @@ const Request= () => {
         setEmail('');
         setCourse('Seleccione un Curso ...');
         setMessage('');
+        setTelephone('');
         
         setSent(true);
         setTimeout(() => {
