@@ -26,6 +26,11 @@ const Contacto = () => {
         setEmail(t);
     };
 
+    const [telephone, setTelephone] = useState("");
+    const getTelephone = (t) => {
+        setTelephone(t);
+    };
+
     const [name, setName] = useState("");
     const getName = (t) => {
         setName(t);
@@ -52,7 +57,7 @@ const Contacto = () => {
             email: email,
             course: course,
             message: message,
-            phone: 'No especificado'
+            phone: telephone
         });
         console.log('Correo enviado con éxito!');
 
@@ -136,6 +141,10 @@ const Contacto = () => {
                                 <div className="form-group">
                                     <input type="text" className="form-control" placeholder="Email"
                                     value={email} onChange={(e) => getEmail(e.target.value)}></input>
+                                </div>
+                                <div className="form-group">
+                                    <input type="text" className="form-control" placeholder="Phone"
+                                    value={telephone} onChange={(e) => getTelephone(e.target.value)}></input>
                                 </div>
                                 <div className="form-group">
                                     <select name="" id="" className="form-control" value={course} onChange={(e) => getCourse(e.target.value)}>
