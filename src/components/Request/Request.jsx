@@ -31,6 +31,7 @@ const Request= () => {
     };
 
     const [sent, setSent] = useState(false);
+    const [errorSent, setErrorSent] = useState(false);
 
     useEffect(() => emailjs.init(process.env.REACT_EMAIL_JS_PUBLIC_KEY), []);
     const handleSubmit = async (e) => {
@@ -39,34 +40,51 @@ const Request= () => {
 
         const serviceId = process.env.REACT_EMAIL_JS_SERVICE_ID;
         const templateId = process.env.REACT_EMAIL_JS_TEMPLATE_ID;
+        const emailRegex = new RegExp(/^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/, "gm");
+        const isValidEmail = emailRegex.test(email);
+        const conditionsArray = [
+            name.length > 2,
+            course.length > 2,
+            isValidEmail
+        ]
 
-        try {
-            await emailjs.send(serviceId, templateId, {
-            name: name,
-            email: email,
-            course: course,
-            message: message,
-            phone: telephone
-        });
-        console.log('Correo enviado con éxito!');
+        if (conditionsArray.indexOf(false) === -1) {
 
-        setName('');
-        setEmail('');
-        setCourse('Seleccione un Curso ...');
-        setMessage('');
-        setTelephone('');
-        
-        setSent(true);
-        setTimeout(() => {
-            setSent(false)
-         }, 10000);
+          try {
+              await emailjs.send(serviceId, templateId, {
+                  name: name,
+                  email: email,
+                  course: course,
+                  message: message,
+                  phone: telephone
+              });
 
-        } catch (error) {
-            console.log("Error!")
-            console.log(error);
-        } finally {
-            console.log('Finalizado!')
+          console.log('Correo enviado con éxito!');
+
+          setName('');
+          setEmail('');
+          setCourse('Seleccione un Curso ...');
+          setMessage('');
+          setTelephone('');
+          
+          setSent(true);
+          setErrorSent(false);
+
+          setTimeout(() => {
+              setSent(false)
+          }, 10000);
+
+          } catch (error) {
+              console.log("Error!")
+              console.log(error);
+          } finally {
+              console.log('Finalizado!')
+          }
+
+        } else {
+          setErrorSent(true)
         }
+        
     };
 
 
@@ -136,6 +154,10 @@ const Request= () => {
                   {sent ? 
                   <h4> Su mensaje se ha enviado a IBASA con éxito.
                   Pronto un agente le contactará para aclarar todas sus dudas.
+                  </h4>: <h4></h4>}
+                  {errorSent ? 
+                  <h4> Error enviando el correo.
+                  Por favor introduzca una dirección de correo válida, seleccione un curso y escriba un nombre válido.
                   </h4>: <h4></h4>}
                   </div>
                 </div>
