@@ -86,17 +86,17 @@ const Request= () => {
                         <div className="select-wrap">
                           <div className="icon"><span className="ion-ios-arrow-down"></span></div>
                           <select name="" id="" className="form-control" value={course} onChange={(e) => getCourse(e.target.value)}>
-                            <option value="">Seleccione un Curso ...</option>
-                            <option value="">Examen de admisión UCR-UNA</option>
-                            <option value="">Examen de admisión TEC</option>
-                            <option value="">Inglés Startup</option>
-                            <option value="">Bachillerato por Madurez</option>
-                            <option value="">Educación Diversificada a Distancia (EDAD)</option>
-                            <option value="">Tercer Ciclo</option>
-                            <option value="">Curso DiMA</option>
-                            <option value="">Prueba de Habilidades Cuantitativas</option>
-                            <option value="">Nivelación Matemática</option>
-                            <option value="">Prueba de Diagnóstico de Matemática del TEC</option>
+                            <option value="Seleccione un Curso ...">Seleccione un Curso ...</option>
+                            <option value="Examen de admisión UCR-UNA">Examen de admisión UCR-UNA</option>
+                            <option value="Examen de admisión TEC">Examen de admisión TEC</option>
+                            <option value="Inglés Startup">Inglés Startup</option>
+                            <option value="Bachillerato por Madurez">Bachillerato por Madurez</option>
+                            <option value="Educación Diversificada a Distancia (EDAD)">Educación Diversificada a Distancia (EDAD)</option>
+                            <option value="Tercer Ciclo">Tercer Ciclo</option>
+                            <option value="Curso DiMA">Curso DiMA</option>
+                            <option value="Prueba de Habilidades Cuantitativas">Prueba de Habilidades Cuantitativas</option>
+                            <option value="Nivelación Matemática">Nivelación Matemática</option>
+                            <option value="Prueba de Diagnóstico de Matemática del TEC">Prueba de Diagnóstico de Matemática del TEC</option>
                           </select>
                         </div>
                       </div>
