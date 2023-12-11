@@ -47,7 +47,7 @@ const IndexPage = () => {
 
         <Request></Request>
 
-        <Blogs></Blogs>
+        {/* <Blogs></Blogs> */}
 
         <Testimony></Testimony>
 

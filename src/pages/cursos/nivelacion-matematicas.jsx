@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Helmet } from 'react-helmet';
-import Layout from "../../components/layout"
+import Layout from "../../components/layout";
+import ContactForm from "../../components/ContactForm/contactform";
 import '../../pages_styles/Courses/Courses.scss';
 import niv_mate from "../../assets/images/gallery/Nivelacion-en-Matematica-1024x490.jpg";
 import niv_mate_2 from "../../assets/images/gallery/Curso-de-Nivelacion-en-Matematica-1.jpg";
@@ -49,24 +50,7 @@ const NivMate = () => {
           </div>
           <div className="row d-flex align-items-stretch no-gutters">
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light" style={{textAlign:"center"}}>
-            <form action="#">
-              <h4> ¡Contáctenos para saber más sobre este curso!</h4>
-              <label class="required">Nombre Completo:</label>
-              <div className="form-group">
-                  <input type="text" className="form-control" name="user_name" required></input>
-              </div>
-              <label class="required">Correo electrónico:</label>
-              <div className="form-group">
-                  <input type="text" className="form-control" name="email" required></input>
-              </div>
-              <label class="required">Mensaje:</label>
-              <div className="form-group">
-                  <textarea name="message" id="" cols="30" rows="7" className="form-control"></textarea>
-              </div>
-              <div className="form-group">
-                  <input type="submit" value="Enviar Mensaje" className="btn btn-primary py-3 px-5"></input>
-              </div>
-            </form>
+            <ContactForm course={'Nivelación Matemática'} showmessage={true}></ContactForm>
             </div>
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
               <h3>Objetivo Principal</h3>

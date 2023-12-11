@@ -1,10 +1,18 @@
-import * as React from "react"
+import * as React from "react";
+import { useState } from "react";
 import { Helmet } from 'react-helmet';
-import Layout from "../../components/layout"
+import Layout from "../../components/layout";
+import ContactForm from "../../components/ContactForm/contactform";
 import '../../pages_styles/Courses/Courses.scss';
 import Courses from "../../components/Courses/Courses";
 
 const ClasesGratuitas = () => {
+
+  const [courseUse, setCourseUse] = useState('Seleccione un Curso ...');
+  const getCourseUse = (t) => {
+    setCourseUse(t);
+  };
+
   return (
     <Layout>
         <Helmet>
@@ -26,46 +34,30 @@ const ClasesGratuitas = () => {
         <div className="container">
           <div className="row d-flex align-items-stretch no-gutters">
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
-              <form action="#">
-                    <label class="required">Nombre Completo:</label>
-                    <div className="form-group">
-                        <input type="text" className="form-control" name="user_name" required></input>
-                    </div>
-                    <label class="required">Correo electrónico:</label>
-                    <div className="form-group">
-                        <input type="text" className="form-control" name="email" required></input>
-                    </div>
-                    <div className="form-group">
-                        <select name="" id="" className="form-control">
-                            <option value="" style={{backgroundColor:"white"}}>Clase Gratuita a recibir ...</option>
-                            <option value="" style={{backgroundColor:"white"}}>Examen de admisión UCR-UNA</option>
-                            <option value="" style={{backgroundColor:"white"}}>Examen de admisión TEC</option>
-                            <option value="" style={{backgroundColor:"white"}}>Inglés Startup</option>
-                            <option value="" style={{backgroundColor:"white"}}>Bachillerato por Madurez</option>
-                            <option value="" style={{backgroundColor:"white"}}>Educación Diversificada a Distancia (EDAD)</option>
-                            <option value="" style={{backgroundColor:"white"}}>Tercer Ciclo</option>
-                            <option value="" style={{backgroundColor:"white"}}>Curso DiMA</option>
-                            <option value="" style={{backgroundColor:"white"}}>Prueba de Habilidades Cuantitativas</option>
-                            <option value="" style={{backgroundColor:"white"}}>Nivelación Matemática</option>
-                            <option value="" style={{backgroundColor:"white"}}>Prueba de Diagnóstico de Matemática del TEC</option>
-                        </select>
-                    </div>
-                    <label class="required">Mensaje:</label>
-                    <div className="form-group">
-                        <textarea name="message" id="" cols="30" rows="7" className="form-control"></textarea>
-                    </div>
-                    <div className="form-group">
-                        <input type="submit" value="Enviar Mensaje" className="btn btn-primary py-3 px-5"></input>
-                    </div>
-                </form>
-                </div>
-                <div className="col-md-6 p-4 p-md-5 order-md-last bg-light" style={{textAlign:"center"}}>
-
-                <h2>¡Descubre la calidad de nuestros cursos con clases gratuitas registrándote acá!</h2>
-                <br></br>
-                <h6>Cuéntanos algunos detalles y te contactaremos para indicarte cómo obtener las clases gratuitas.</h6>
-
-                </div>
+              <div>
+                <select name="" id="" value={courseUse} onChange={(e) => getCourseUse(e.target.value)}>
+                  <option value="Seleccione un Curso ..." style={{backgroundColor:"white"}}>Clase Gratuita a recibir ...</option>
+                  <option value="Examen de admisión UCR-UNA" style={{backgroundColor:"white"}}>Examen de admisión UCR-UNA</option>
+                  <option value="Examen de admisión TEC" style={{backgroundColor:"white"}}>Examen de admisión TEC</option>
+                  <option value="Inglés Startup" style={{backgroundColor:"white"}}>Inglés Startup</option>
+                  <option value="Bachillerato por Madurez" style={{backgroundColor:"white"}}>Bachillerato por Madurez</option>
+                  <option value="Educación Diversificada a Distancia (EDAD)" style={{backgroundColor:"white"}}>Educación Diversificada a Distancia (EDAD)</option>
+                  <option value="Tercer Ciclo" style={{backgroundColor:"white"}}>Tercer Ciclo</option>
+                  <option value="Curso DiMA" style={{backgroundColor:"white"}}>Curso DiMA</option>
+                  <option value="Prueba de Habilidades Cuantitativas" style={{backgroundColor:"white"}}>Prueba de Habilidades Cuantitativas</option>
+                  <option value="Nivelación Matemática" style={{backgroundColor:"white"}}>Nivelación Matemática</option>
+                  <option value="Prueba de Diagnóstico de Matemática del TEC" style={{backgroundColor:"white"}}>Prueba de Diagnóstico de Matemática del TEC</option>
+                </select>
+              </div>
+              <ContactForm course={courseUse} showmessage={false}></ContactForm>
+            </div>
+            
+            <div className="col-md-6 p-4 p-md-5 order-md-last bg-light" style={{textAlign:"center"}}>
+            <h2>¡Descubre la calidad de nuestros cursos con clases gratuitas registrándote acá!</h2>
+            <br></br>
+            <h6>Cuéntanos algunos detalles y te contactaremos para indicarte cómo obtener las clases gratuitas.</h6>
+            </div>
+      
           </div>
         </div>
         </section>

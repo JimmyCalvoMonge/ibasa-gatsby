@@ -1,19 +1,19 @@
 [
     {
     "id": "blog_1",
-    "title":"Un título para el blog",
-    "day":"26",
-    "month":"Febrero",
-    "year":"1899",
+    "title":"Curso de Preparación para el Examen de Admisión UCR-UNA",
+    "day":"12",
+    "month":"Diciembre",
+    "year":"2023",
     "author":"Admin",
     "description":"Esta es una pequeña descripción de lo que trata este blog"
     },
     {
     "id": "blog_2",
-    "title":"Un título para el blog",
-    "day":"26",
-    "month":"Febrero",
-    "year":"1899",
+    "title":"Curso de Inglés",
+    "day":"12",
+    "month":"Diciembre",
+    "year":"2023",
     "author":"Admin",
     "description":"Esta es una pequeña descripción de lo que trata este blog"
     },
