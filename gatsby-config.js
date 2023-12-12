@@ -7,6 +7,7 @@ require("dotenv").config({
 })
 
 const siteUrl = process.env.REACT_APP_ROOT_URL || `https://ibasa-gatsby.vercel.app`
+const google_tagmanager_id = process.env.REACT_GOOGLE_TAG_ID
 
 module.exports = {
   siteMetadata: {
@@ -42,7 +43,23 @@ module.exports = {
       // If you do not provide a crossOrigin option, it will skip CORS for manifest.
       // Any invalid keyword or empty string defaults to `anonymous`
       crossOrigin: `use-credentials`,
+      },
     },
-  },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: google_tagmanager_id,
+        // Include GTM in development.
+        // Defaults to false meaning GTM will only be loaded in production.
+        includeInDevelopment: false,
+        // Name of the event that is triggered
+        // on every Gatsby route change.
+        // Defaults to gatsby-route-change
+        routeChangeEventName: "ibasa_web_page_change_route",
+        // Defaults to false
+        enableWebVitalsTracking: true,
+      },
+    },
+
 ],
 }
