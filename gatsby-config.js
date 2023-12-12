@@ -52,7 +52,7 @@ module.exports = {
         id: google_tagmanager_id,
         // Include GTM in development.
         // Defaults to false meaning GTM will only be loaded in production.
-        includeInDevelopment: false,
+        includeInDevelopment: true,
         // Name of the event that is triggered
         // on every Gatsby route change.
         // Defaults to gatsby-route-change
