@@ -8,6 +8,7 @@ require("dotenv").config({
 
 const siteUrl = process.env.REACT_APP_ROOT_URL || `https://ibasa-gatsby.vercel.app`
 const google_tagmanager_id = process.env.REACT_GOOGLE_TAG_ID
+const google_analytics_id = process.env.REACT_GOOGLE_ANALYTICS_ID
 
 module.exports = {
   siteMetadata: {
@@ -60,6 +61,29 @@ module.exports = {
         enableWebVitalsTracking: true,
       },
     },
-
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: google_analytics_id,
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 0,
+        // Defers execution of google analytics script after page load
+        defer: false,
+        // Any additional optional fields
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        // defaults to false
+        enableWebVitalsTracking: true,
+      },
+    },
 ],
 }
