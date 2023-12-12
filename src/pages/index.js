@@ -43,7 +43,7 @@ const IndexPage = () => {
 
         <Courses></Courses>
 
-        <Teachers></Teachers>
+        {/* <Teachers></Teachers> */}
 
         <Request></Request>
 

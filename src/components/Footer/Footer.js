@@ -58,8 +58,8 @@ const Footer = () =>  {
                     <li><a href={`${base_url}`}><span className="ion-ios-arrow-round-forward mr-2"></span>Inicio</a></li>
                     <li><a href={`${base_url}/nosotros`}><span className="ion-ios-arrow-round-forward mr-2"></span>Nosotros</a></li>
                     <li><a href={`${base_url}/cursos`}><span className="ion-ios-arrow-round-forward mr-2"></span>Cursos</a></li>
-                    <li><a href={`${base_url}/profes`}><span className="ion-ios-arrow-round-forward mr-2"></span>Profesores</a></li>
-                    <li><a href={`${base_url}/blogs`}><span className="ion-ios-arrow-round-forward mr-2"></span>Información</a></li>
+                    {/* <li><a href={`${base_url}/profes`}><span className="ion-ios-arrow-round-forward mr-2"></span>Profesores</a></li>
+                    <li><a href={`${base_url}/blogs`}><span className="ion-ios-arrow-round-forward mr-2"></span>Información</a></li> */}
                     </ul>
                 </div>
                 </div>
