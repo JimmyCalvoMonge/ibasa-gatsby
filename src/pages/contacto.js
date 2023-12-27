@@ -153,12 +153,9 @@ const Contacto = () => {
                     
                     <div className="row d-flex align-items-stretch no-gutters">
                         <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
-
-                        <h1> Ibasa </h1>  
-                                                
                         <script id="amoforms_script_1204064" async="async" 
                             charset="utf-8" src="https://forms.kommo.com/forms/assets/js/amoforms.js?1702422060"></script>
-                        
+
                         </div>
                         <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
                         <a href="https://www.google.es/maps/place/Instituto+IBASA-Alajuela/@10.0164905,-84.2181734,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0f9c5a0054d07:0x9667c861164a0fb5!8m2!3d10.0164693!4d-84.2160421?hl=es&shorturl=1" target={'_blank'}>
@@ -168,9 +165,6 @@ const Contacto = () => {
                     </div>
                 </div>
             </section>
-
-            <h1> Fin de la pagina </h1>
-
         </Layout>
     );
 }
