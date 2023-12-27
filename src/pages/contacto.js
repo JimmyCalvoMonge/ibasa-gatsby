@@ -154,62 +154,11 @@ const Contacto = () => {
                     <div className="row d-flex align-items-stretch no-gutters">
                         <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
 
-                        <h1> Ibasa </h1>                          
-                        <script
-                        dangerouslySetInnerHTML={{
-                            __html: `
-                            !function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"1204064",hash:"7c735ce48b32369276eb686c785a8da1",locale:"es"}),a[o+m]=a[o+m]||function(f,k){a[o+m].f=(a[o+m].f||[]).concat([[f,k]])}}(window,0,"amo_forms_","params","load","loaded");
-                        `,
-                        }}
-                        />
-
-                        <h1> Gracias! </h1>
-                            {/* <div className="form-group">
-                                <input type="text" value={name} className="form-control" placeholder="Nombre"
-                                onChange={(e) => getName(e.target.value)}></input>
-                            </div>
-                            <div className="form-group">
-                                <input type="text" className="form-control" placeholder="Email"
-                                value={email} onChange={(e) => getEmail(e.target.value)}></input>
-                            </div>
-                            <div className="form-group">
-                                <input type="text" className="form-control" placeholder="Phone"
-                                value={telephone} onChange={(e) => getTelephone(e.target.value)}></input>
-                            </div>
-                            <div className="form-group">
-                                <select name="" id="" className="form-control" value={course} onChange={(e) => getCourse(e.target.value)}>
-                                    <option value="Seleccione un Curso ..." style={{backgroundColor:"white"}}>Seleccione un Curso ...</option>
-                                    <option value="Examen de admisión UCR-UNA" style={{backgroundColor:"white"}}>Examen de admisión UCR-UNA</option>
-                                    <option value="Examen de admisión TEC" style={{backgroundColor:"white"}}>Examen de admisión TEC</option>
-                                    <option value="Inglés Startup" style={{backgroundColor:"white"}}>Inglés Startup</option>
-                                    <option value="Bachillerato por Madurez" style={{backgroundColor:"white"}}>Bachillerato por Madurez</option>
-                                    <option value="Educación Diversificada a Distancia (EDAD)" style={{backgroundColor:"white"}}>Educación Diversificada a Distancia (EDAD)</option>
-                                    <option value="Tercer Ciclo" style={{backgroundColor:"white"}}>Tercer Ciclo</option>
-                                    <option value="Curso DiMA" style={{backgroundColor:"white"}}>Curso DiMA</option>
-                                    <option value="Prueba de Habilidades Cuantitativas" style={{backgroundColor:"white"}}>Prueba de Habilidades Cuantitativas</option>
-                                    <option value="Nivelación Matemática" style={{backgroundColor:"white"}}>Nivelación Matemática</option>
-                                    <option value="Prueba de Diagnóstico de Matemática del TEC" style={{backgroundColor:"white"}}>Prueba de Diagnóstico de Matemática del TEC</option>
-                                </select>
-                            </div>
-                            <div className="form-group">
-                                <textarea name="" id="" cols="30" rows="7" className="form-control" placeholder="Mensaje"
-                                value={message} onChange={(e) => getMessage(e.target.value)}></textarea>
-                            </div>
-                            <div className="form-group">
-                                <input type="submit" value="Enviar Mensaje!"
-                                className="btn btn-primary py-3 px-5" onClick={(e) => handleSubmit(e)}></input>
-                            </div>
-                            <div>
-                            {sent ? 
-                                <h6> Su mensaje se ha enviado a IBASA con éxito.
-                                Pronto un agente le contactará para aclarar todas sus dudas.
-                                </h6>: <h6></h6>}
-                            {errorSent ? 
-                            <h4> Error enviando el correo.
-                            Por favor introduzca una dirección de correo válida, seleccione un curso y escriba un nombre válido.
-                            </h4>: <h4></h4>}
-                            </div> */}
-
+                        <h1> Ibasa </h1>  
+                                                
+                        <script id="amoforms_script_1204064" async="async" 
+                            charset="utf-8" src="https://forms.kommo.com/forms/assets/js/amoforms.js?1702422060"></script>
+                        
                         </div>
                         <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
                         <a href="https://www.google.es/maps/place/Instituto+IBASA-Alajuela/@10.0164905,-84.2181734,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0f9c5a0054d07:0x9667c861164a0fb5!8m2!3d10.0164693!4d-84.2160421?hl=es&shorturl=1" target={'_blank'}>
@@ -219,7 +168,6 @@ const Contacto = () => {
                     </div>
                 </div>
             </section>
-
 
             <h1> Fin de la pagina </h1>
 
