@@ -19,8 +19,8 @@ export const onRenderBody = ({ setHeadComponents, setPostBodyComponents}, plugin
       `,
       }}
       />,
-    <script id="amoforms_script_1204064" async="async" 
-    charset="utf-8" src="https://forms.kommo.com/forms/assets/js/amoforms.js?1702422060"></script>,
+    <script id="amoforms_script_1204064" async="async" charset="utf-8"
+    src="https://forms.kommo.com/forms/assets/js/amoforms.js?1702422060"></script>,
     <Footer></Footer>
   ])
 }
