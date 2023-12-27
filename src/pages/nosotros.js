@@ -4,6 +4,7 @@ import { SEO } from "../components/seo"
 
 // Import Page css
 import '../pages_styles/About/About.scss'
+import Request from "../components/Request/Request";
 
 // Import base Layout
 import Layout from "../components/layout"
@@ -189,7 +190,9 @@ const AboutPage = () => {
       </section>
 
       <MyLoadableTestimony></MyLoadableTestimony>
+      
       <Gallery></Gallery>
+      <Request></Request>
 
     </Layout>
   )

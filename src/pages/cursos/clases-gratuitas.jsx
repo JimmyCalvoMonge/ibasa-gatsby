@@ -18,6 +18,7 @@ const ClasesGratuitas = () => {
         <Helmet>
           <title>IBASA | Explorar Clases </title>
         </Helmet>
+
         <section className="hero-wrap hero-wrap-2 clases_gratuitas_start_image">
         <div className="overlay"></div>
         <div className="container">
@@ -30,7 +31,7 @@ const ClasesGratuitas = () => {
         </div>
         </section>
 
-        <section style={{marginBottom:"5%", marginTop:"5%"}}>
+        {/* <section style={{marginBottom:"5%", marginTop:"5%"}}>
         <div className="container">
           <div className="row d-flex align-items-stretch no-gutters">
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
@@ -60,7 +61,7 @@ const ClasesGratuitas = () => {
       
           </div>
         </div>
-        </section>
+        </section> */}
 
         <Courses></Courses>
 

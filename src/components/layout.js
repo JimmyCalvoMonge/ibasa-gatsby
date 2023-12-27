@@ -15,8 +15,7 @@ export default function Layout({ children }) {
     </Helmet>
     <NavBarLight></NavBarLight>
     <NavBarDark></NavBarDark>
-      {children}
-    <Footer></Footer>
+    {children}
     </div>
   )
 }

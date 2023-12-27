@@ -53,7 +53,7 @@ const HabCuantitativas = () => {
           </div>
           <div className="row d-flex align-items-stretch no-gutters">
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light" style={{textAlign:"center"}}>
-            <ContactForm course={'Habilidades Cuantitativas'} showmessage={true}></ContactForm>
+            {/* <ContactForm course={'Habilidades Cuantitativas'} showmessage={true}></ContactForm> */}
             </div>
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
               <h3>¿Qué es la Prueba de Habilidades Cuantitativas?</h3>

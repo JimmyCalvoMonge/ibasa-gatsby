@@ -53,7 +53,7 @@ const AdmisionUCRUNA = () => {
           </div>
           <div className="row d-flex align-items-stretch no-gutters">
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light" style={{textAlign:"center"}}>
-            <ContactForm course={'Examen de admisión UCR-UNA'} showmessage={true}></ContactForm>
+            {/* <ContactForm course={'Examen de admisión UCR-UNA'} showmessage={true}></ContactForm> */}
             </div>
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
               <h3>¿Qué contenidos evalúa la P.A.A. UCR?</h3>

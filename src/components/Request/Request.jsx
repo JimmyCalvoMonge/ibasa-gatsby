@@ -103,7 +103,7 @@ const Request= () => {
                   que puedas aprobar los exámenes que aplica el MEP
                   y para los exámenes de admisión de las universidades.</p>
                 </div>
-                <div className="appointment-form ftco-animate">
+                {/* <div className="appointment-form ftco-animate">
                   <div className="d-md-flex">
                     <div className="form-group">
                       <input type="text" className="form-control"
@@ -160,7 +160,7 @@ const Request= () => {
                   Por favor introduzca una dirección de correo válida, seleccione un curso y escriba un nombre válido.
                   </h4>: <h4></h4>}
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

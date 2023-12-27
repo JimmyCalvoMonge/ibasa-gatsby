@@ -66,7 +66,7 @@ const BachMadurez = () => {
           </div>
           <div className="row d-flex align-items-stretch no-gutters">
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light" style={{textAlign:"center"}}>
-            <ContactForm course={'Bachillerato por Madurez'} showmessage={true}></ContactForm>
+            {/* <ContactForm course={'Bachillerato por Madurez'} showmessage={true}></ContactForm> */}
             </div>
             <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
             

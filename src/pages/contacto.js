@@ -152,7 +152,9 @@ const Contacto = () => {
                 <div className="container">
                     <div className="row d-flex align-items-stretch no-gutters">
                         <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
-                            <script
+
+                        <h1> Ibasa </h1>
+                            {/* <script
                             dangerouslySetInnerHTML={{
                                 __html: `
                                 !function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"1204064",hash:"7c735ce48b32369276eb686c785a8da1",locale:"es"}),a[o+m]=a[o+m]||function(f,k){a[o+m].f=(a[o+m].f||[]).concat([[f,k]])}}(window,0,"amo_forms_","params","load","loaded");
@@ -160,7 +162,7 @@ const Contacto = () => {
                             }}
                             />
                             <script id="amoforms_script_1204064" async="async" 
-                            charset="utf-8" src="https://forms.kommo.com/forms/assets/js/amoforms.js?1702422060"></script>
+                            charset="utf-8" src="https://forms.kommo.com/forms/assets/js/amoforms.js?1702422060"></script> */}
 
                             {/* <div className="form-group">
                                 <input type="text" value={name} className="form-control" placeholder="Nombre"
@@ -207,6 +209,7 @@ const Contacto = () => {
                             Por favor introduzca una dirección de correo válida, seleccione un curso y escriba un nombre válido.
                             </h4>: <h4></h4>}
                             </div> */}
+
                         </div>
                         <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
                         <a href="https://www.google.es/maps/place/Instituto+IBASA-Alajuela/@10.0164905,-84.2181734,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0f9c5a0054d07:0x9667c861164a0fb5!8m2!3d10.0164693!4d-84.2160421?hl=es&shorturl=1" target={'_blank'}>
