@@ -152,7 +152,6 @@ const Contacto = () => {
                 <div className="container">
                     
                     <div className="row d-flex align-items-stretch no-gutters">
-                        
                         <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
 
                         <h1> Ibasa </h1>                          
@@ -163,6 +162,8 @@ const Contacto = () => {
                         `,
                         }}
                         />
+
+                        <h1> Gracias! </h1>
                             {/* <div className="form-group">
                                 <input type="text" value={name} className="form-control" placeholder="Nombre"
                                 onChange={(e) => getName(e.target.value)}></input>
@@ -218,6 +219,9 @@ const Contacto = () => {
                     </div>
                 </div>
             </section>
+
+
+            <h1> Fin de la pagina </h1>
 
         </Layout>
     );
