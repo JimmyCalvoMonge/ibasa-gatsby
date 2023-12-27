@@ -150,7 +150,9 @@ const Contacto = () => {
             
             <section style={{marginBottom:"5%"}}>
                 <div className="container">
+                    
                     <div className="row d-flex align-items-stretch no-gutters">
+                        
                         <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
 
                         <h1> Ibasa </h1>                          
