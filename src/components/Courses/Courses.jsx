@@ -1,6 +1,7 @@
 import * as React from "react"
 import '../../pages_styles/Courses/Courses.scss';
-var base_url = process.env.REACT_APP_ROOT_URL;
+
+var base_url = 'https://institutoibasacr.com';
 var CoursesData = require('../../pages_styles/Courses/FullCoursesData.json');
 var CoursesDataSmall = [CoursesData[0], CoursesData[1],CoursesData[2],CoursesData[3]]
 

@@ -1,5 +1,6 @@
 import * as React from "react"
 import './Gallery.scss';
+
 var base_url = process.env.REACT_APP_ROOT_URL;
 
 const Gallery= () => {

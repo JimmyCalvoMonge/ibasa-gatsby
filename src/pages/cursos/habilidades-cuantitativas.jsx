@@ -1,7 +1,6 @@
 import * as React from "react"
 import { Helmet } from 'react-helmet';
 import Layout from "../../components/layout";
-import ContactForm from "../../components/ContactForm/contactform";
 import '../../pages_styles/Courses/Courses.scss';
 import niv_mate from "../../assets/images/gallery/Nivelacion-en-Matematica-1024x490.jpg";
 import niv_mate_2 from "../../assets/images/gallery/Curso-de-Nivelacion-en-Matematica-1.jpg";

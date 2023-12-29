@@ -2,14 +2,13 @@ import * as React from "react"
 import { Helmet } from 'react-helmet';
 import Layout from "../../components/layout"
 
-import ContactForm from "../../components/ContactForm/contactform";
-
 import '../../pages_styles/Courses/Courses.scss';
 import paa_ucr from "../../assets/images/gallery/paa-ucr.jpg";
 import paa_ucr_2 from "../../assets/images/gallery/prueba-de-aptitud-academica.jpg";
 import paa_ucr_3 from "../../assets/images/about.jpg";
 import paa_ucr_4 from "../../assets/images/gallery/aptitud-academica.jpg";
 import reporte_mej_prom from '../../assets/files/Estudiantes-con-mejores-notas-de-admision-preparados-en-IBASA-2021.pdf';
+
 var base_url = process.env.REACT_APP_ROOT_URL;
 
 const AdmisionUCRUNA = () => {

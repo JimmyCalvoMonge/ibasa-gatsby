@@ -3,8 +3,6 @@ import { Helmet } from 'react-helmet';
 import Layout from "../../components/layout"
 import '../../pages_styles/Courses/Courses.scss';
 
-import ContactForm from "../../components/ContactForm/contactform";
-
 import bms_1 from "../../assets/images/gallery/Bachillerato-por-Madurez-suficiente-1.jpg";
 import bms_2 from "../../assets/images/gallery/Bachillerato-por-Madurez-suficiente-2.jpg";
 import bms_3 from "../../assets/images/gallery/Bachillerato-por-Madurez-suficiente-3.jpg";

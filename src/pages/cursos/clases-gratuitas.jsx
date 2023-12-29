@@ -2,16 +2,10 @@ import * as React from "react";
 import { useState } from "react";
 import { Helmet } from 'react-helmet';
 import Layout from "../../components/layout";
-import ContactForm from "../../components/ContactForm/contactform";
 import '../../pages_styles/Courses/Courses.scss';
 import Courses from "../../components/Courses/Courses";
 
 const ClasesGratuitas = () => {
-
-  const [courseUse, setCourseUse] = useState('Seleccione un Curso ...');
-  const getCourseUse = (t) => {
-    setCourseUse(t);
-  };
 
   return (
     <Layout>

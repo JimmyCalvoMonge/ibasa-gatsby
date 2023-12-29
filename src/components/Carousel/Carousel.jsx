@@ -3,7 +3,7 @@ import Loadable from "react-loadable"
 import './Carousel.scss';
 import 'owl.carousel/dist/assets/owl.carousel.css';  
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-var base_url = process.env.REACT_APP_ROOT_URL;
+var base_url = 'https://institutoibasacr.com';
 var CarouselData = require('./CarouselData.json');
 
 const loader=()=>(<div> Cargando ... </div>)

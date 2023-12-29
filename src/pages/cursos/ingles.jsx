@@ -1,7 +1,6 @@
 import * as React from "react"
 import { Helmet } from 'react-helmet';
 import Layout from "../../components/layout";
-import ContactForm from "../../components/ContactForm/contactform";
 import '../../pages_styles/Courses/Courses.scss';
 
 import ingstartup1 from "../../assets/images/gallery/Startup.png";

@@ -1,6 +1,7 @@
 import * as React from "react"
 import '../../pages_styles/Blogs/Blogs.scss';
-var base_url = process.env.REACT_APP_ROOT_URL;
+
+var base_url = 'https://institutoibasacr.com';
 var BlogsData = require('../../pages_styles/Blogs/FullBlogsData.json');
 var BlogsDataSmall = [BlogsData[0], BlogsData[1], BlogsData[2]]
 

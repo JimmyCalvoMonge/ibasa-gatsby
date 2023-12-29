@@ -1,7 +1,8 @@
 import * as React from "react"
 import {isMobile} from 'react-device-detect';
 import '../../components/Footer/Footer.scss'
-var base_url = process.env.REACT_APP_ROOT_URL;
+
+var base_url = 'https://institutoibasacr.com';
 
 if(isMobile) {
     var whatsapp_link = "https://api.whatsapp.com/send?phone=50684456161"

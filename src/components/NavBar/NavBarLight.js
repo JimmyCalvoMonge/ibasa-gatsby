@@ -3,7 +3,8 @@ import {isMobile} from 'react-device-detect';
 import "../../styles/open-iconic-bootstrap.min.css"
 import "../../styles/style.css"
 
-var base_url = process.env.REACT_APP_ROOT_URL;
+var base_url = 'https://institutoibasacr.com';
+
 if(isMobile) {
   var whatsapp_link = "https://api.whatsapp.com/send?phone=50684456161"
 } else {

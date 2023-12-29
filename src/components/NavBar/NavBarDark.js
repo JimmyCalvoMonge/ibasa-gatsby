@@ -6,7 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './NavBar.css';
 
-var base_url = process.env.REACT_APP_ROOT_URL;
+var base_url = 'https://institutoibasacr.com';
 
 const NavBarDark = () =>  {
 
