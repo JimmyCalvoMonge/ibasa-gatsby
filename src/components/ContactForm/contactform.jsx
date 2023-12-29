@@ -1,126 +1,81 @@
 import * as React from "react"
-import { useState, useEffect } from "react";
-import emailjs from "@emailjs/browser";
+import './contactform.scss'
 
-// Contact Form with Fixed Course Name
-
-const ContactForm = (props) => {
-
-    const [message, setMessage] = useState('');
-    const getMessage = (t) => {
-        setMessage(t);
-    };
-
-    const [email, setEmail] = useState('');
-    const getEmail = (t) => {
-        setEmail(t);
-    };
-
-    const [name, setName] = useState('');
-    const getName = (t) => {
-        setName(t);
-    };
-
-    const [telephone, setTelephone] = useState('');
-    const getTelephone = (t) => {
-        setTelephone(t);
-    };
-
-    const [sent, setSent] = useState(false);
-    const [errorSent, setErrorSent] = useState(false);
-
-    useEffect(() => emailjs.init(process.env.REACT_EMAIL_JS_PUBLIC_KEY), []);
-    const handleSubmit = async (e) => {
-
-        e.preventDefault();
-
-        const course = props.course;
-
-        const serviceId = process.env.REACT_EMAIL_JS_SERVICE_ID;
-        const templateId = process.env.REACT_EMAIL_JS_TEMPLATE_ID;
-        const emailRegex = new RegExp(/^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/, "gm");
-        const isValidEmail = emailRegex.test(email);
-        const conditionsArray = [
-            name.length > 2,
-            course.length > 2,
-            isValidEmail
-        ]
-
-        if (conditionsArray.indexOf(false) === -1) {
-            try {
-                await emailjs.send(serviceId, templateId, {
-                name: name,
-                email: email,
-                course: course,
-                message: message,
-                phone: telephone
-            });
-            console.log('Correo enviado con éxito!');
-    
-            setName('');
-            setEmail('');
-            setMessage('');
-            setTelephone('');
-            
-            setSent(true);
-            setErrorSent(false);
-
-            setTimeout(() => {
-                setSent(false)
-             }, 10000);
-    
-            } catch (error) {
-                console.log("Error!")
-                console.log(error);
-            } finally {
-                console.log('Finalizado!')
-            }
-
-          } else {
-            setErrorSent(true)
-          }
-        
-    };
-
+const ContactForm = () => {
     return (
     <div>
-        {props.showmessage ? <h4>¡Contáctenos para saber más sobre este curso!</h4>: <h4></h4>}
-        <label className="required">Nombre Completo:</label>
-        <div className="form-group">
-            <input type="text" className="form-control" name="user_name"
-            value={name} onChange={(e) => getName(e.target.value)} required></input>
-        </div>
-        <label className="required">Correo electrónico:</label>
-        <div className="form-group">
-            <input type="text" className="form-control" name="email"
-            value={email} onChange={(e) => getEmail(e.target.value)} required></input>
-        </div>
-        <label className="required">Teléfono:</label>
-        <div className="form-group">
-            <input type="text" className="form-control" name="telephone"
-            value={telephone} onChange={(e) => getTelephone(e.target.value)} required></input>
-        </div>
-        <label className="required">Mensaje:</label>
-        <div className="form-group">
-            <textarea name="message" id="" cols="30" rows="7" className="form-control"
-            value={message} onChange={(e) => getMessage(e.target.value)} ></textarea>
-        </div>
-        <div className="form-group">
-            <input type="submit" value="Enviar Mensaje" className="btn btn-primary py-3 px-5"
-            onClick={(e) => handleSubmit(e)}></input>
-        </div>
-        {sent ? 
-        <h4> Su mensaje se ha enviado a IBASA con éxito.
-        Pronto un agente le contactará para aclarar todas sus dudas.
-        </h4>: <h4></h4>}
-
-        {errorSent ? 
-        <h4> Error enviando el correo.
-        Por favor introduzca una dirección de correo válida, seleccione un curso y escriba un nombre válido.
-        </h4>: <h4></h4>}
-
+        <section className="ftco-section ftco-consult ftco-no-pt ftco-no-pb request_background" data-stellar-background-ratio="0.5">
+            <div className="overlay"></div>
+            <div className="container">
+                <div className="row justify-content-end">
+                    <div className="col-md-6 py-5 px-md-5">
+                        <div className="py-md-5">
+                            <div className="heading-section heading-section-white ftco-animate mb-5">
+                                <h2 className="mb-4">¡Póngase en contacto con nosotros!</h2>
+                                <p>En Instituto IBASA contamos con profesionales en
+                                educación para preparar a los y las estudiantes y
+                                que puedas aprobar los exámenes que aplica el MEP
+                                y para los exámenes de admisión de las universidades.
+                                </p>
+                                <script
+                                dangerouslySetInnerHTML={{
+                                    __html: `
+                                    !function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"1204064",hash:"7c735ce48b32369276eb686c785a8da1",locale:"es"}),a[o+m]=a[o+m]||function(f,k){a[o+m].f=(a[o+m].f||[]).concat([[f,k]])}}(window,0,"amo_forms_","params","load","loaded");
+                                `,
+                                }}
+                                />
+                                <script id="amoforms_script_1204064" async="async" charset="utf-8" 
+                                    src="https://forms.kommo.com/forms/assets/js/amoforms.js?1702422060">
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
   );
 }
 
 export default ContactForm;
+
+// import logo from "../../assets/images/gallery/ibasa-alajuela.png";
+// <script
+// dangerouslySetInnerHTML={{
+//     __html: `
+//     jQuery(document).ready(function() {
+//             !function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"1204064",hash:"7c735ce48b32369276eb686c785a8da1",locale:"es"}),a[o+m]=a[o+m]||function(f,k){a[o+m].f=(a[o+m].f||[]).concat([[f,k]])}}(window,0,"amo_forms_","params","load","loaded");
+//     });`,
+// }}
+// />,
+
+{/* <div>
+        <h6 style={{textAlign:"center"}}> ¡Escríbanos y con gusto le atenderemos todas sus dudas!</h6>,
+        <section style={{marginBottom:"5%"}}>
+            <div className="container">
+                <div className="row d-flex align-items-stretch no-gutters">
+                    <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
+
+                    <script
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                        !function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"1204064",hash:"7c735ce48b32369276eb686c785a8da1",locale:"es"}),a[o+m]=a[o+m]||function(f,k){a[o+m].f=(a[o+m].f||[]).concat([[f,k]])}}(window,0,"amo_forms_","params","load","loaded");
+                    `,
+                    }}
+                    />
+
+                    <script id="amoforms_script_1204064" async="async" charset="utf-8" 
+                        src="https://forms.kommo.com/forms/assets/js/amoforms.js?1702422060">
+                    </script>
+
+                    </div>
+                    <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
+                    <a href="https://www.google.es/maps/place/Instituto+IBASA-Alajuela/@10.0164905,-84.2181734,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0f9c5a0054d07:0x9667c861164a0fb5!8m2!3d10.0164693!4d-84.2160421?hl=es&shorturl=1" target={'_blank'}>
+                        <img src={logo} className="App-logo" alt="logo" style={{width:"100%"}}/>
+                    </a>
+                    <p> Oficinas Centrales Ibasa. ¡Todos nuestros cursos son virtuales para su mayor comodidad!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div> */}

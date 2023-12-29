@@ -3,7 +3,7 @@ import {isMobile} from 'react-device-detect';
 import { SEO } from "../components/seo";
 import '../pages_styles/Contact/Contact.scss';
 import Layout from "../components/layout";
-import logo from "../assets/images/gallery/ibasa-alajuela.png";
+
 if(isMobile) {
     var whatsapp_link = "https://api.whatsapp.com/send?phone=50684456161"
 } else {

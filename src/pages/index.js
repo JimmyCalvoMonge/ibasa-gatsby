@@ -21,7 +21,6 @@ import Offer from "../components/Offer/Offer";
 import About from "../components/About/About";
 import Courses from "../components/Courses/Courses";
 // import Teachers from "../components/Teachers/Teachers";
-import Request from "../components/Request/Request";
 // import Blogs from '../components/Blogs/Blogs';
 import Testimony from "../components/Testimony/Testimony";
 import Gallery from "../components/Gallery/Gallery";
@@ -50,8 +49,6 @@ const IndexPage = () => {
         <Testimony></Testimony>
 
         <Gallery></Gallery>
-
-        <Request></Request>
 
       </Layout>
   </div>
