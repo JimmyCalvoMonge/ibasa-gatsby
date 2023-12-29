@@ -5,87 +5,88 @@ import './Request.scss';
 
 const Request= () => {
 
-    const [message, setMessage] = useState("");
-    const getMessage = (t) => {
-        setMessage(t);
-    };
+    // const [message, setMessage] = useState("");
+    // const getMessage = (t) => {
+    //     setMessage(t);
+    // };
 
-    const [email, setEmail] = useState("");
-    const getEmail = (t) => {
-        setEmail(t);
-    };
+    // const [email, setEmail] = useState("");
+    // const getEmail = (t) => {
+    //     setEmail(t);
+    // };
 
-    const [name, setName] = useState("");
-    const getName = (t) => {
-        setName(t);
-    };
+    // const [name, setName] = useState("");
+    // const getName = (t) => {
+    //     setName(t);
+    // };
 
-    const [telephone, setTelephone] = useState("");
-    const getTelephone = (t) => {
-        setTelephone(t);
-    };
+    // const [telephone, setTelephone] = useState("");
+    // const getTelephone = (t) => {
+    //     setTelephone(t);
+    // };
 
-    const [course, setCourse] = useState("");
-    const getCourse = (t) => {
-        setCourse(t);
-    };
+    // const [course, setCourse] = useState("");
+    // const getCourse = (t) => {
+    //     setCourse(t);
+    // };
 
-    const [sent, setSent] = useState(false);
-    const [errorSent, setErrorSent] = useState(false);
+    // const [sent, setSent] = useState(false);
+    // const [errorSent, setErrorSent] = useState(false);
 
-    useEffect(() => emailjs.init(process.env.REACT_EMAIL_JS_PUBLIC_KEY), []);
-    const handleSubmit = async (e) => {
+    // useEffect(() => emailjs.init(process.env.REACT_EMAIL_JS_PUBLIC_KEY), []);
+    
+    // const handleSubmit = async (e) => {
 
-        e.preventDefault();
+    //     e.preventDefault();
 
-        const serviceId = process.env.REACT_EMAIL_JS_SERVICE_ID;
-        const templateId = process.env.REACT_EMAIL_JS_TEMPLATE_ID;
-        const emailRegex = new RegExp(/^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/, "gm");
-        const isValidEmail = emailRegex.test(email);
-        const conditionsArray = [
-            name.length > 2,
-            course.length > 2,
-            isValidEmail
-        ]
+    //     const serviceId = process.env.REACT_EMAIL_JS_SERVICE_ID;
+    //     const templateId = process.env.REACT_EMAIL_JS_TEMPLATE_ID;
+    //     const emailRegex = new RegExp(/^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/, "gm");
+    //     const isValidEmail = emailRegex.test(email);
+    //     const conditionsArray = [
+    //         name.length > 2,
+    //         course.length > 2,
+    //         isValidEmail
+    //     ]
 
-        if (conditionsArray.indexOf(false) === -1) {
+    //     if (conditionsArray.indexOf(false) === -1) {
 
-          try {
-              await emailjs.send(serviceId, templateId, {
-                  name: name,
-                  email: email,
-                  course: course,
-                  message: message,
-                  phone: telephone
-              });
+    //       try {
+    //           await emailjs.send(serviceId, templateId, {
+    //               name: name,
+    //               email: email,
+    //               course: course,
+    //               message: message,
+    //               phone: telephone
+    //           });
 
-          console.log('Correo enviado con éxito!');
+    //       console.log('Correo enviado con éxito!');
 
-          setName('');
-          setEmail('');
-          setCourse('Seleccione un Curso ...');
-          setMessage('');
-          setTelephone('');
+    //       setName('');
+    //       setEmail('');
+    //       setCourse('Seleccione un Curso ...');
+    //       setMessage('');
+    //       setTelephone('');
           
-          setSent(true);
-          setErrorSent(false);
+    //       setSent(true);
+    //       setErrorSent(false);
 
-          setTimeout(() => {
-              setSent(false)
-          }, 10000);
+    //       setTimeout(() => {
+    //           setSent(false)
+    //       }, 10000);
 
-          } catch (error) {
-              console.log("Error!")
-              console.log(error);
-          } finally {
-              console.log('Finalizado!')
-          }
+    //       } catch (error) {
+    //           console.log("Error!")
+    //           console.log(error);
+    //       } finally {
+    //           console.log('Finalizado!')
+    //       }
 
-        } else {
-          setErrorSent(true)
-        }
+    //     } else {
+    //       setErrorSent(true)
+    //     }
         
-    };
+    // };
 
 
   return (

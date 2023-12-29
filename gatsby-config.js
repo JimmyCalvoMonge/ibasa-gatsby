@@ -60,6 +60,9 @@ module.exports = {
         // Defaults to false
         enableWebVitalsTracking: true,
       },
-    }
+    },
+    {
+      resolve: "gatsby-plugin-no-sourcemaps",
+    },
 ],
 }

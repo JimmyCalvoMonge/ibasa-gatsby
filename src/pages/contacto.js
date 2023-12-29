@@ -1,8 +1,5 @@
 import * as React from "react";
-import { useState, useEffect } from "react";
 import {isMobile} from 'react-device-detect';
-import emailjs from "@emailjs/browser";
-
 import { SEO } from "../components/seo";
 import '../pages_styles/Contact/Contact.scss';
 import Layout from "../components/layout";
@@ -15,88 +12,6 @@ if(isMobile) {
 var base_url = process.env.REACT_APP_ROOT_URL;
 
 const Contacto = () => {
-
-    const [message, setMessage] = useState("");
-    const getMessage = (t) => {
-        setMessage(t);
-    };
-
-    const [email, setEmail] = useState("");
-    const getEmail = (t) => {
-        setEmail(t);
-    };
-
-    const [telephone, setTelephone] = useState("");
-    const getTelephone = (t) => {
-        setTelephone(t);
-    };
-
-    const [name, setName] = useState("");
-    const getName = (t) => {
-        setName(t);
-    };
-
-    const [course, setCourse] = useState("");
-    const getCourse = (t) => {
-        setCourse(t);
-    };
-
-    const [sent, setSent] = useState(false);
-    const [errorSent, setErrorSent] = useState(false);
-
-    useEffect(() => emailjs.init(process.env.REACT_EMAIL_JS_PUBLIC_KEY), []);
-    const handleSubmit = async (e) => {
-
-        e.preventDefault();
-
-        const serviceId = process.env.REACT_EMAIL_JS_SERVICE_ID;
-        const templateId = process.env.REACT_EMAIL_JS_TEMPLATE_ID;
-        const emailRegex = new RegExp(/^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/, "gm");
-        const isValidEmail = emailRegex.test(email);
-        const conditionsArray = [
-            name.length > 2,
-            course.length > 2,
-            isValidEmail
-        ]
-
-        if (conditionsArray.indexOf(false) === -1) {
-
-          try {
-              await emailjs.send(serviceId, templateId, {
-                  name: name,
-                  email: email,
-                  course: course,
-                  message: message,
-                  phone: telephone
-              });
-
-          console.log('Correo enviado con éxito!');
-
-          setName('');
-          setEmail('');
-          setCourse('Seleccione un Curso ...');
-          setMessage('');
-          setTelephone('');
-          
-          setSent(true);
-          setErrorSent(false);
-
-          setTimeout(() => {
-              setSent(false)
-          }, 10000);
-
-          } catch (error) {
-              console.log("Error!")
-              console.log(error);
-          } finally {
-              console.log('Finalizado!')
-          }
-
-        } else {
-            console.log('Valores de entrada incorrectos!')
-            setErrorSent(true)
-        }
-    };
 
     return (
         <Layout>
@@ -145,26 +60,7 @@ const Contacto = () => {
                     </div>
                 </div>
             </section>
-
-            <h6 style={{textAlign:"center"}}> ¡Escríbanos y con gusto le atenderemos todas sus dudas!</h6>
-            
-            <section style={{marginBottom:"5%"}}>
-                <div className="container">
-                    
-                    <div className="row d-flex align-items-stretch no-gutters">
-                        <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
-                        <script id="amoforms_script_1204064" async="async" 
-                            charset="utf-8" src="https://forms.kommo.com/forms/assets/js/amoforms.js?1702422060"></script>
-
-                        </div>
-                        <div className="col-md-6 p-4 p-md-5 order-md-last bg-light">
-                        <a href="https://www.google.es/maps/place/Instituto+IBASA-Alajuela/@10.0164905,-84.2181734,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0f9c5a0054d07:0x9667c861164a0fb5!8m2!3d10.0164693!4d-84.2160421?hl=es&shorturl=1" target={'_blank'}>
-                            <img src={logo} className="App-logo" alt="logo" style={{width:"100%"}}/>
-                        </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    
         </Layout>
     );
 }
@@ -178,7 +74,7 @@ export const Head = () => (
                 {
                 "@context": "https://schema.org",
                 "@type": "Organization",
-                "url": ${base_url},
+                "url": ${base_url}/contacto,
                 "name": "Instituto Ibasa",
                 "contactPoint": {
                     "@type": "ContactPoint",
