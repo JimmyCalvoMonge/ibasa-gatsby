@@ -10,22 +10,28 @@ export const onRenderBody = ({ setHeadComponents, setPostBodyComponents, pathnam
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       crossOrigin="anonymous">
     </script>,
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V49YV81KCH"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V49YV81KCH"></script>,
+    <meta name="theme-color" content="#DC3545"></meta>
   ])
 
-  if(pathname.includes("contacto") || pathname.includes("nosotros") || pathname === "/"){
+  setPostBodyComponents([
+    <ContactForm></ContactForm>,
+    <Footer></Footer>
+  ])
 
-    setPostBodyComponents([
-      <ContactForm></ContactForm>,
-      <Footer></Footer>
-    ])
+  // if(pathname.includes("contacto") || pathname.includes("nosotros") || pathname === "/"){
 
-  }else{
+  //   setPostBodyComponents([
+  //     <ContactForm></ContactForm>,
+  //     <Footer></Footer>
+  //   ])
 
-    setPostBodyComponents([
-      <Footer></Footer>
-    ])
-  }
+  // }else{
 
+  //   setPostBodyComponents([
+  //     <ContactForm></ContactForm>,
+  //     <Footer></Footer>
+  //   ])
+  // }
   
 }
